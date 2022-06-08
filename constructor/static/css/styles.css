@@ -165,22 +165,30 @@ body {
     margin-top: 22px;
 }
 
+.down{
+    width: 1234px;
+    height: 524px;
+    background: #4ac1f7;
+    margin-top: 25px;
+}
+
 .block1 {
     position: absolute;
     width: 368px;
     height: 524px;
-    top: 318px;
+
 
     background: #F8F9FC;
     border-radius: 11.2076px;
 }
 
 .block2 {
+
     position: absolute;
     width: 368px;
     height: 524px;
     margin-left: 28.5%;
-    top: 318px;
+
 
     background: #F8F9FC;
     border-radius: 11.2076px;
@@ -191,8 +199,9 @@ body {
     width: 368px;
     height: 524px;
     margin-left: 57%;
-    top: 318px;
+
 
     background: #F8F9FC;
     border-radius: 11.2076px;
 }
+
