@@ -225,3 +225,18 @@ body {
     width: 336px;
     height: 493px;
 }
+
+.rad > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+
+.rad > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+
+.rad > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid #878DF2;
+    border-radius: 10px;
+}
