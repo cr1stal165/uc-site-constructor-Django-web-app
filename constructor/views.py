@@ -9,3 +9,7 @@ def index(request):
 
 def take_color(request):
     return render(request, "take_color.html")
+
+
+def template_uc1(request):
+    return render(request, "template_uc1.html")
