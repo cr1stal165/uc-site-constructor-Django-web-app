@@ -22,7 +22,7 @@ from constructor import views
 urlpatterns = [
     path('', views.index, name="index"),
     path('take-color/', views.take_color, name="take_color"),
-    path('template1/', views.template_uc1, name="template_uc1"),
+    path('take-images/', views.take_images, name="take_images"),
     path('admin/', admin.site.urls),
 ]
 

@@ -36,6 +36,7 @@ def get_house(user_id, company_id):
     # return data
     return {'id' : 123, 'adress' : 'Воронеж Победы 5'}
 
+
 def get_news(user_id, company_id):
     # response = requests.get('https://reestrdoma.ru/api/house?user_id={}&company_id={}'.format(users_id, company_id))
     # data = response.json()

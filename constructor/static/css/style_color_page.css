@@ -232,7 +232,6 @@ body {
 
 .rad > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
     border:1px solid #878DF2;
-    border-radius: 10px;
     filter: drop-shadow(0px 0px 15px rgba(135, 141, 242, 0.7));
 
 }
