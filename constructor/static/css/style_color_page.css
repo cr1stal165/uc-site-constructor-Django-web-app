@@ -20,7 +20,7 @@ body {
     top: 103px;
     margin-left: 36px;
     padding-top: 43px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 48px;
@@ -218,4 +218,21 @@ body {
     width: 229px;
     height: 201px;
     margin: 279px 0 0 308px;
+}
+
+.rad > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+
+.rad > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+
+.rad > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+    border:1px solid #878DF2;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 15px rgba(135, 141, 242, 0.7));
+
 }
