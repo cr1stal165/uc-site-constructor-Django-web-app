@@ -17,12 +17,14 @@
         <div class="button2"><p class="color">Цвет</p></div>
         <div class="button3"><p class="content">Контент</p></div>
         <div class="button4"><p class="info">Информация</p></div>
-        <div class="button5"><a href="{% url 'take_images' %}"><img class="arr" src="../constructor/static/img/Arrow3.svg"></a></div>
+        <div class="button5"><a href="{% url 'take_images' %}"><img class="arr"
+                                                                    src="../constructor/static/img/Arrow3.svg"></a>
+        </div>
     </div>
     <div class="down">
         <div class="rect">
             <label class="rad">
-                <input type="radio" name="r2" value="small"/><img class="color1" src="{% static 'img/color1.svg' %}">
+                <input type="radio" name="r2" checked="checked" value="small"/><img class="color1" src="{% static 'img/color1.svg' %}">
             </label>
 
             <label class="rad">
