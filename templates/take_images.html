@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style_image_page.css' %}"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap">
+    <title>Document</title>
+</head>
+<body>
+<form>
+    <div class="up">
+        <p class="main_text">Выберите цвет</p>
+        <div class="button1"><a href="{% url 'index' %}" style="text-decoration: none" class="template">Шаблон</a></div>
+        <div class="button2"><a href="{% url 'take_color' %}" style="text-decoration: none" class="color">Цвет</a></div>
+        <div class="button3"><p class="content">Контент</p></div>
+        <div class="button4"><p class="info">Информация</p></div>
+        <div class="button5"><a><img class="arr" src="../constructor/static/img/Arrow3.svg"></a></div>
+    </div>
+    <div class="down">
+        <div class="download_logo">
+            <p class="text"><img src="../constructor/static/img/download_logo.svg" align="center">Загрузить логотип</p>
+        </div>
+        <div class="download_banner">
+            <p class="text"><img src="../constructor/static/img/download_logo.svg" align="center">Загрузить баннер</p>
+        </div>
+        <div class="preview">
+            
+        </div>
+    </div>
+</form>
+</body>
+</html>
