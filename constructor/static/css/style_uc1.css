@@ -647,8 +647,8 @@ body {
     position: absolute;
     width: 400px;
     height: 80px;
-    left: 635px;
-    top: 2302px;
+    top: 2400px;
+    left: 645px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -665,7 +665,7 @@ body {
     position: absolute;
     width: 1479px;
     height: 303px;
-    top: 2400px;
+    top: 2600px;
 }
 
 .number a {
@@ -693,15 +693,6 @@ body {
     height: 41px;
     left: 172px;
     background-image: url('/static/img/noun-phone-4770370 2.png');
-}
-
-.back_contacts {
-    position: absolute;
-    width: 1535px;
-    height: 403px;
-    top: 2300px;
-    /*background: linear-gradient(360deg, #D9D9D9 3.94%, rgba(217, 217, 217, 0) 47.44%);*/
-    background-image: url('/static/img/Rectangle 14.png');
 }
 
 .back3 {
@@ -871,4 +862,67 @@ body {
     -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
     box-shadow: inset 3px 3px 10px #7d8e8f;
     padding: 10px;
+}
+
+
+.accordion {
+  transform: translateZ(0);
+  background: white;
+  border-bottom: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+}
+
+.accordion>.accordion-toggle {
+  display: none;
+  position: absolute;
+  opacity: 0;
+}
+
+.accordion>label {
+  display: block;
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  background: #ecebec;
+  color: #555;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.accordion>label:after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  width: 12px;
+  height: 12px;
+  border-left: 2px solid #555;
+  border-top: 2px solid #555;
+  transform: rotate(-135deg);
+  transition: 0.4s transform;
+}
+
+.accordion>section {
+  overflow: hidden;
+  height: 0;
+  transition: all .4s;
+}
+
+.accordion>.accordion-toggle:checked~label:after {
+  transform: rotate(45deg);
+  top: 16px;
+}
+
+.accordion>.accordion-toggle:checked~section {
+  height: 50px;
+}
+
+.accordion>section p {
+  margin: 15px 0;
+  padding: 0 20px;
 }

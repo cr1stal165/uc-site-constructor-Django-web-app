@@ -13,3 +13,7 @@ def take_color(request):
 
 def take_images(request):
     return render(request, "take_images.html")
+
+
+def template_uc1(request):
+    return render(request, "template_uc1.html")

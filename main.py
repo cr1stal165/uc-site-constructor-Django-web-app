@@ -1,8 +1,3 @@
-
-
-print("hello world!")
-
-
 def get_companies(users_id):
     #response = requests.get('https://reestrdoma.ru/api/companies?user_id={}'.format(users_id))
     #data = response.json()
