@@ -87,24 +87,6 @@ body {
     top: 53px;
 }
 
-.back1 {
-    position: absolute;
-    width: 1535px;
-    height: 956px;
-    background-image: url('/static/img/Rectangle 13.png');
-
-}
-
-/*"{% static 'img/bg.jpg' %}"*/
-.back2 {
-    position: absolute;
-    width: 275.43px;
-    height: 550.25px;
-    left: -0.21px;
-    top: 1200.05px;
-    background-image: url('/static/img/Group 27.png');
-}
-
 .text {
     position: absolute;
     width: 970px;
@@ -925,4 +907,12 @@ body {
 .accordion>section p {
   margin: 15px 0;
   padding: 0 20px;
+}
+
+label,p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+label, section, .accordion{
+    border-radius: 10px;
 }

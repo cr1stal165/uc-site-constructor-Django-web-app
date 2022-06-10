@@ -4,11 +4,18 @@ from django.template.response import TemplateResponse
 
 
 def index(request):
+
     return render(request, "constructor.html")
 
 
 def take_color(request):
-    return render(request, "take_color.html")
+    print(request)
+    r1 = 0
+    if request.method == 'POST':
+        r1 = request.POST.get('r1')
+        print(r1)
+        print(request.POST)
+    return render(request, "take_color.html", context={'r': r1})
 
 
 def take_images(request):
