@@ -23,6 +23,8 @@ urlpatterns = [
     path('', views.index, name="index"),
     path('take-color/', views.take_color, name="take_color"),
     path('take-images/', views.take_images, name="take_images"),
+    path('take_info/', views.take_info, name="take_info"),
+    path('final_page/', views.final_page, name="final_page"),
     path('uc1/', views.template_uc1, name="template_uc1"),
     path('admin/', admin.site.urls),
 ]

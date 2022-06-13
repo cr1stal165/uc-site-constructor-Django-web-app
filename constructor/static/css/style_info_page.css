@@ -1,0 +1,256 @@
+body {
+    background: #F1F3F9;
+    display: flex;
+    justify-content: center;
+}
+
+.up {
+    width: 1234px;
+    height: 222px;
+    margin: 63px 0 0 0;
+
+    background: #F8F9FC;
+    border-radius: 10px;
+}
+
+.main_text {
+
+    width: 620px;
+    height: 80px;
+    top: 103px;
+    margin-left: 36px;
+    padding-top: 43px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 59px;
+    /* identical to box height */
+    color: #000000;
+}
+
+.button1 {
+    /* Rectangle 70 */
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 161px;
+    height: 52px;
+    top: 199px;
+    margin-left: 37px;
+
+    background: #878DF2;
+    border-radius: 48px;
+}
+
+.template {
+    position: absolute;
+    width: 135px;
+    height: 24px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 16px;
+    margin-left: 12px;
+    color: #000000;
+}
+
+.button2 {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 125px;
+    height: 52px;
+    margin-left: 219px;
+    top: 199px;
+
+    background: #878DF2;
+    border-radius: 48px;
+}
+
+.info {
+    position: absolute;
+    width: 41px;
+    height: 20px;
+    margin-left: 12px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+.button3 {
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 161px;
+    height: 52px;
+    margin-left: 365px;
+    top: 199px;
+
+    background: #FFFFFF;
+    border:2px solid #878DF2;
+    border-radius: 48px;
+
+}
+
+.color {
+    position: absolute;
+    width: 135px;
+    height: 24px;
+    margin-left: 12px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 16px;
+    color: #000000;
+}
+
+.button4 {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 206px;
+    height: 52px;
+    margin-left: 547px;
+    top: 199px;
+
+    background: #FFFFFF;
+    border-radius: 48px;
+}
+
+.content {
+    position: absolute;
+    width: 135px;
+    height: 24px;
+    margin-left: 12px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 16px;
+    color: #000000;
+}
+
+.button5 {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 114px;
+    height: 52px;
+    margin-left: 1099px;
+    top: 199px;
+
+    background: #FFFFFF;
+    border-radius: 48px;
+}
+
+.arr {
+    position: absolute;
+    margin-left: 42px;
+    margin-top: 22px;
+}
+
+.down {
+    width: 1234px;
+    height: 524px;
+    background: #F1F3F9;
+    margin-top: 25px;
+}
+
+.rect {
+    position: absolute;
+    width: 571px;
+    height: 516px;
+
+
+    background: #F8F9FC;
+    border-radius: 12.5676px;
+}
+
+.preview {
+    position: absolute;
+    width: 627px;
+    height: 652px;
+    margin-left: 607px;
+
+    background: gray;
+    border-radius: 12.5676px;
+}
+
+.first_rect{
+    position: absolute;
+    width: 571px;
+    height: 101px;
+
+    background: #F8F9FC;
+    border-radius: 12.5676px;
+}
+
+.second_rect{
+    position: absolute;
+    width: 571px;
+    height: 101px;
+    margin-top: 159px;
+    background: #F8F9FC;
+    border-radius: 12.5676px;
+}
+
+.text_inn{
+    position: absolute;
+    width: 170px;
+    height: 24px;
+    margin: 19px 0 0 11px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #000000;
+}
+
+.input_inn{
+    width: 520px;
+    height: 30px;
+    margin: 58px 0 0 11px;
+    border-radius: 5px;
+    border-color: #FFFFFF;
+}
+
+.text_domain{
+    position: absolute;
+    width: 170px;
+    height: 24px;
+    margin: 19px 0 0 11px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #000000;
+}
+
+.input_domain{
+    width: 520px;
+    height: 30px;
+    margin: 58px 0 0 11px;
+    border-radius: 5px;
+    border-color: #FFFFFF;
+}

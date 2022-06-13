@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style_final_page.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap">
+    <title>Document</title>
+</head>
+<body>
+    <p class="main">Сайт успешно создан!</p>
+    <img src="../constructor/static/img/cloud.svg">
+        <div class="button1">
+            <a class="but1">Продолжить</a>
+        </div>
+        <div class="button2">
+            <a href="{% url 'index' %}" style="text-decoration: none" class="but2">Главная</a>
+        </div>
+</body>
+</html>

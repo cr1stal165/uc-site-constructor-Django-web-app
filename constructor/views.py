@@ -22,5 +22,13 @@ def take_images(request):
     return render(request, "take_images.html")
 
 
+def take_info(request):
+    return render(request, "take_info.html")
+
+
 def template_uc1(request):
     return render(request, "template_uc1.html")
+
+
+def final_page(request):
+    return render(request, "final_page.html")
