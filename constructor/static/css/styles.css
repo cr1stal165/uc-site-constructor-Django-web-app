@@ -150,21 +150,14 @@ body {
 
 .button5 {
     box-sizing: border-box;
-
     position: absolute;
     width: 114px;
     height: 52px;
     margin-left: 1099px;
     top: 199px;
-
     background: #FFFFFF;
     border-radius: 48px;
-}
-
-.arr {
-    position: absolute;
-    margin-left: 42px;
-    margin-top: 22px;
+    border: 0 solid #000000;
 }
 
 .down{

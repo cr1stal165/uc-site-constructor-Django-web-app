@@ -216,7 +216,7 @@ body {
     width: 170px;
     height: 24px;
     margin: 19px 0 0 11px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -230,7 +230,7 @@ body {
     height: 30px;
     margin: 58px 0 0 11px;
     border-radius: 5px;
-    border-color: #FFFFFF;
+    border: 1px solid #000000;
 }
 
 .text_domain{
@@ -238,7 +238,7 @@ body {
     width: 170px;
     height: 24px;
     margin: 19px 0 0 11px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -252,5 +252,5 @@ body {
     height: 30px;
     margin: 58px 0 0 11px;
     border-radius: 5px;
-    border-color: #FFFFFF;
+    border: 1px solid #000000;
 }
