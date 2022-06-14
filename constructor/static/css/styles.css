@@ -41,7 +41,7 @@ body {
     margin-left: 37px;
 
     background: #FFFFFF;
-    border:2px solid #878DF2;
+    border: 2px solid black;
     border-radius: 48px;
 }
 
@@ -50,7 +50,7 @@ body {
     width: 135px;
     height: 24px;
 
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -79,7 +79,7 @@ body {
     height: 20px;
     margin-left: 12px;
 
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -111,7 +111,7 @@ body {
     height: 24px;
     margin-left: 12px;
 
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -139,7 +139,7 @@ body {
     height: 24px;
     margin-left: 12px;
 
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -160,7 +160,7 @@ body {
     border: 0 solid #000000;
 }
 
-.down{
+.down {
     width: 1234px;
     height: 524px;
     background: #F1F3F9;
@@ -171,7 +171,6 @@ body {
     position: absolute;
     width: 368px;
     height: 524px;
-
 
     background: #F8F9FC;
     border-radius: 11.2076px;
@@ -200,39 +199,39 @@ body {
     border-radius: 11.2076px;
 }
 
-.tem1{
+.tem1 {
     margin: 16px 16px 15px 16px;
     position: absolute;
     width: 336px;
     height: 493px;
 }
 
-.tem2{
+.tem2 {
     margin: 16px 16px 15px 16px;
     position: absolute;
     width: 336px;
     height: 493px;
 }
 
-.tem3{
+.tem3 {
     margin: 16px 16px 15px 16px;
     position: absolute;
     width: 336px;
     height: 493px;
 }
 
-.rad > input{ /* HIDE RADIO */
-  visibility: hidden; /* Makes input not-clickable */
-  position: absolute; /* Remove input from document flow */
+.rad > input { /* HIDE RADIO */
+    visibility: hidden; /* Makes input not-clickable */
+    position: absolute; /* Remove input from document flow */
 }
 
-.rad > input + img{ /* IMAGE STYLES */
-  cursor:pointer;
-  border:2px solid transparent;
+.rad > input + img { /* IMAGE STYLES */
+    cursor: pointer;
+    border: 2px solid transparent;
 }
 
-.rad > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
-    border:1px solid #878DF2;
+.rad > input:checked + img { /* (RADIO CHECKED) IMAGE STYLES */
+    border: 1px solid #878DF2;
     border-radius: 10px;
     filter: drop-shadow(0px 0px 15px rgba(135, 141, 242, 0.5));
 

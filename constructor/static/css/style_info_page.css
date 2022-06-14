@@ -38,8 +38,6 @@ body {
     height: 52px;
     top: 199px;
     margin-left: 37px;
-
-    background: #878DF2;
     border-radius: 48px;
 }
 
@@ -67,7 +65,6 @@ body {
     margin-left: 219px;
     top: 199px;
 
-    background: #878DF2;
     border-radius: 48px;
 }
 
@@ -99,7 +96,6 @@ body {
     top: 199px;
 
     background: #FFFFFF;
-    border:2px solid #878DF2;
     border-radius: 48px;
 
 }
@@ -127,7 +123,7 @@ body {
     height: 52px;
     margin-left: 547px;
     top: 199px;
-
+    border:2px solid black;
     background: #FFFFFF;
     border-radius: 48px;
 }

@@ -10,30 +10,29 @@
     <title>Document</title>
 </head>
 <body>
-<form action="{% url 'take_color' %}" method="post">
-    {% csrf_token %}
+<form>
     <div class="up">
         <p class="main_text">Выберите шаблон</p>
         <div class="button1"><p class="template">Шаблон</p></div>
         <div class="button2"><p class="color">Цвет</p></div>
         <div class="button3"><p class="content">Контент</p></div>
         <div class="button4"><p class="info">Информация</p></div>
-        <button type="submit" class="button5"><img class="arr" src="../constructor/static/img/Arrow3.svg"></button>
+        <div class="button5"><a href="{% url 'take_color' %}"><img class="arr" src="../constructor/static/img/Arrow3.svg"></a></div>
     </div>
     <div class="down">
         <div class="block1">
             <label class="rad">
-                <input type="radio" name="r1" checked="checked" value="1"/><img class="tem1" src="{% static 'img/template1.png' %}">
+                <input type="radio" name="r1" checked="checked" value="small"/><img class="tem1" src="{% static 'img/template1.png' %}">
             </label>
         </div>
         <div class="block2">
             <label class="rad">
-                <input type="radio" name="r1" value="2"/><img class="tem2" src="{% static 'img/template2.png' %}">
+                <input type="radio" name="r1" value="small"/><img class="tem2" src="{% static 'img/template2.png' %}">
             </label>
         </div>
         <div class="block3">
             <label class="rad">
-                <input type="radio" name="r1" value="3"/><img class="tem3" src="{% static 'img/template3.png' %}">
+                <input type="radio" name="r1" value="small"/><img class="tem3" src="{% static 'img/template3.png' %}">
             </label>
         </div>
     </div>

@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/style_image_page.css' %}"/>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap">
     <title>Document</title>
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
 <form>
@@ -20,14 +22,20 @@
         <div class="button5"><a href="{% url 'take_info' %}"><img class="arr" src="../constructor/static/img/Arrow3.svg"></a></div>
     </div>
     <div class="down">
-        <div class="download_logo">
-            <p class="text"><img src="../constructor/static/img/download_logo.svg" align="center">Загрузить логотип</p>
-        </div>
-        <div class="download_banner">
-            <p class="text"><img src="../constructor/static/img/download_logo.svg" align="center">Загрузить баннер</p>
-        </div>
+        <form id="upload-container" method="POST" action="send.php">
+{#            <div class="download_logo">#}
+{#                <p class="text"><img src="../constructor/static/img/download_logo.svg" align="center">Загрузить логотип#}
+{#                </p>#}
+{#            </div>#}
+             <input id="file-input" type="file" name="file" multiple>
+            <label for="file-input">Выберите файл</label>
+{#            <div class="download_banner">#}
+{#                <p class="text"><img src="../constructor/static/img/download_logo.svg" align="center">Загрузить баннер#}
+{#                </p>#}
+{#            </div>#}
+        </form>
         <div class="preview">
-            
+
         </div>
     </div>
 </form>

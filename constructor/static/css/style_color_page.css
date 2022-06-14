@@ -40,7 +40,7 @@ body {
     margin-left: 37px;
     cursor: pointer;
 
-    background: #878DF2;
+
     border-radius: 48px;
 }
 
@@ -69,7 +69,7 @@ body {
     top: 199px;
 
     background: #FFFFFF;
-    border:2px solid #878DF2;
+    border:2px solid black;
     border-radius: 48px;
 }
 
@@ -199,6 +199,7 @@ body {
     width: 229px;
     height: 201px;
     margin: 31px 0 0 32px;
+    border-radius: 10px;
 }
 
 .color2 {
@@ -206,6 +207,7 @@ body {
     width: 229px;
     height: 201px;
     margin: 31px 0 0 308px;
+    border-radius: 10px;
 }
 
 .color3 {
@@ -221,6 +223,7 @@ body {
     width: 229px;
     height: 201px;
     margin: 279px 0 0 308px;
+    border-radius: 10px;
 }
 
 .rad > input{ /* HIDE RADIO */
@@ -234,7 +237,7 @@ body {
 }
 
 .rad > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
-    border:1px solid #878DF2;
-    filter: drop-shadow(0px 0px 15px rgba(135, 141, 242, 0.7));
+
+    filter: drop-shadow(0px 0px 15px rgba(135, 141, 242, 1));
 
 }
