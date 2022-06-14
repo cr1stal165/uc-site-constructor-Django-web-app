@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/style_color_page.css' %}"/>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap">
     <title>Document</title>
+
 </head>
 <body>
 <form>
@@ -43,7 +44,8 @@
 
         </div>
         <div class="preview">
-            {{ r }}
+            <iframe src="{% url 'template_uc1' %}" height="652px" width="627px" scrolling="yes" frameborder="1" >
+        </iframe>
         </div>
     </div>
 </form>

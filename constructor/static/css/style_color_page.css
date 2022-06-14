@@ -39,8 +39,6 @@ body {
     top: 199px;
     margin-left: 37px;
     cursor: pointer;
-
-
     border-radius: 48px;
 }
 
@@ -48,7 +46,6 @@ body {
     position: absolute;
     width: 135px;
     height: 24px;
-
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -61,7 +58,6 @@ body {
 
 .button2 {
     box-sizing: border-box;
-
     position: absolute;
     width: 125px;
     height: 52px;
@@ -69,7 +65,7 @@ body {
     top: 199px;
 
     background: #FFFFFF;
-    border:2px solid black;
+    border: 2px solid black;
     border-radius: 48px;
 }
 
@@ -226,17 +222,21 @@ body {
     border-radius: 10px;
 }
 
-.rad > input{ /* HIDE RADIO */
-  visibility: hidden; /* Makes input not-clickable */
-  position: absolute; /* Remove input from document flow */
+iframe{
+    scale: 0.1;
 }
 
-.rad > input + img{ /* IMAGE STYLES */
-  cursor:pointer;
-  border:2px solid transparent;
+.rad > input { /* HIDE RADIO */
+    visibility: hidden; /* Makes input not-clickable */
+    position: absolute; /* Remove input from document flow */
 }
 
-.rad > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+.rad > input + img { /* IMAGE STYLES */
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.rad > input:checked + img { /* (RADIO CHECKED) IMAGE STYLES */
 
     filter: drop-shadow(0px 0px 15px rgba(135, 141, 242, 1));
 

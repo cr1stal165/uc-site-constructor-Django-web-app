@@ -17,6 +17,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
+from django.views.decorators.clickjacking import xframe_options_sameorigin
+
 from constructor import views
 
 urlpatterns = [
@@ -25,7 +27,7 @@ urlpatterns = [
     path('take-images/', views.take_images, name="take_images"),
     path('take_info/', views.take_info, name="take_info"),
     path('final_page/', views.final_page, name="final_page"),
-    path('uc1/', views.template_uc1, name="template_uc1"),
+    path('uc1/', xframe_options_sameorigin(views.template_uc1), name="template_uc1"),
     path('admin/', admin.site.urls),
 ]
 
