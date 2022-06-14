@@ -146,21 +146,20 @@ body {
 
 .button5 {
     box-sizing: border-box;
-
     position: absolute;
     width: 114px;
     height: 52px;
     margin-left: 1099px;
     top: 199px;
-
     background: #FFFFFF;
     border-radius: 48px;
+    border: 2px solid #000000;
 }
 
 .arr {
     position: absolute;
-    margin-left: 42px;
-    margin-top: 22px;
+    margin-left: -15px;
+    margin-top: -3px;
 }
 
 .down {

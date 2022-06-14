@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 <body>
-<form method="post" action="{% url 'take_color' %}">
+<form method="post" action={% url 'take_color' %}>
     {% csrf_token %}
     <div class="up">
         <p class="main_text">Выберите шаблон</p>
