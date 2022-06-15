@@ -29,6 +29,9 @@ class House(models.Model):
 class Site(models.Model):
     domain = models.CharField(max_length=100)
     template = models.ForeignKey('Template', on_delete=models.CASCADE)
+    colors = models.CharField(max_length=100)
+    logo = models.ImageField(upload_to='template_logo')
+    banner = models.ImageField(upload_to='template_banner')
 
 
 class News(models.Model):

@@ -4,7 +4,6 @@ from django.template.response import TemplateResponse
 
 
 def index(request):
-
     return render(request, "constructor.html")
 
 
@@ -19,6 +18,8 @@ def take_color(request):
 
 
 def take_images(request):
+    if request.method == 'POST':
+        img = request.FILES.get("file")
     return render(request, "take_images.html")
 
 
