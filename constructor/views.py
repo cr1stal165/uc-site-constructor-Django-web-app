@@ -27,7 +27,9 @@ def take_images(request):
 
     if request.method == 'POST':
         img = request.FILES.get("file")
-
+        color = request.POST.get('r2')
+        if color == 'color1':
+            render(request, "template_uc2.html", context={'second_color': list_colors[1]})
     return render(request, "take_images.html")
 
 
