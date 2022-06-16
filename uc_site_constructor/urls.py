@@ -22,9 +22,9 @@ from constructor import views
 
 urlpatterns = [
     path('', views.index, name="index"),
-    path('take-color/', views.take_color, name="take_color"),
-    path('take-images/', views.take_images, name="take_images"),
-    path('take_info/', views.take_info, name="take_info"),
+    path('take-color/',  xframe_options_sameorigin(views.take_color), name="take_color"),
+    path('take-images/',  xframe_options_sameorigin(views.take_images), name="take_images"),
+    path('take_info/', xframe_options_sameorigin(views.take_info), name="take_info"),
     path('final_page/', views.final_page, name="final_page"),
     path('uc1/', xframe_options_sameorigin(views.template_uc1), name="template_uc1"),
     path('user_temp2/', xframe_options_sameorigin(views.template_uc2), name="template_uc2"),

@@ -11,7 +11,7 @@
 </head>
 <body>
 <form method="post" action="{% url 'final_page' %}">
-{% csrf_token %}
+    {% csrf_token %}
     <div class="up">
         <p class="main_text">Введите информацию </p>
         <div class="button1"><a href="{% url 'index' %}" style="text-decoration: none" class="template">Шаблон</a></div>
@@ -30,7 +30,7 @@
             <input class="input_domain" type="text" placeholder="Введите домен" />
         </div>
         <div class="preview">
-            
+            <iframe src="{% url 'template_uc' %}?param={{ curr }}&param_color{{ color }}" height="652px" width="627px" scrolling="yes" frameborder="1"></iframe>
         </div>
     </div>
 </form>

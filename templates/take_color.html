@@ -13,13 +13,14 @@
 <body>
 <form method="post" action={% url 'take_images' %}>
     {% csrf_token %}
+    <input type="hidden" name="r1" value="{{ curr }}">
     <div class="up">
         <p class="main_text">Выберите цвет</p>
         <div class="button1"><a href="{% url 'index' %}" style="text-decoration: none" class="template">Шаблон</a></div>
         <div class="button2"><p class="color">Цвет</p></div>
         <div class="button3"><p class="content">Контент</p></div>
         <div class="button4"><p class="info">Информация</p></div>
-        <button class="button6"><a class="choose">Применить</a></button>
+        <button class="button6" ><a class="choose">Применить</a></button>
         <button class="button5"><a href="{% url 'take_images' %}"><img class="arr" src="../constructor/static/img/Arrow3.svg"></a>
         </button>
     </div>
