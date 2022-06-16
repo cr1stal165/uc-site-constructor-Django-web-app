@@ -88,25 +88,25 @@
 		<input id="toggle1" type="radio" class="accordion-toggle" name="toggle" />
 			<label for="toggle1">Общая информация об УК</label>
 				<section>
-					<p>Контакты - </p>
+					<p>Контакты - {{ contacts }}</p>
 						</section>
 							<section>
-								<p>ИНН - </p>
+								<p>ИНН - {{ inn }}</p>
 									</section>
 										<section>
-											<p>КПП - </p>
+											<p>КПП - {{ kpp }}</p>
 												</section>
 													<section>
-												<p>Полное наименование - </p>
+												<p>Полное наименование - {{ full_name }}</p>
 											</section>
 										<section>
-									<p>ОГРН - </p>
+									<p>ОГРН - {{ ogrn }}</p>
 								</section>
 							<section>
-						<p>Генеральный директор - </p>
+						<p>Генеральный директор - {{ director }}</p>
 					</section>
 				<section>
-			<p>Юридический адрес - </p>
+			<p>Юридический адрес - {{ address }}</p>
 		</section>
 	</div>
 
@@ -115,27 +115,6 @@
 			<label for="toggle2">Дома в управлении</label>
 				<section>
 			<p>Дома в управлении</p>
-		</section>
-	</div>
-	<div class="accordion">
-		<input id="toggle3" type="radio" class="accordion-toggle" name="toggle" />
-			<label for="toggle3">Тарифы на услуги</label>
-				<section>
-			<p>Текст 3</p>
-		</section>
-	</div>
-	<div class="accordion">
-		<input id="toggle4" type="radio" class="accordion-toggle" name="toggle" />
-			<label for="toggle4">Финансовая отчетность</label>
-				<section>
-			<p>Текст 4</p>
-		</section>
-	</div>
-	<div class="accordion">
-		<input id="toggle5" type="radio" class="accordion-toggle" name="toggle" />
-			<label for="toggle5">Информация об общем имуществе</label>
-				<section>
-			<p>Текст 4</p>
 		</section>
 	</div>
 </div>

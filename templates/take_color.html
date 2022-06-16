@@ -25,27 +25,27 @@
     <div class="down">
         <div class="rect">
             <label class="rad">
-                <input type="radio" name="r2" checked="checked" value="small"/><img class="color1"
+                <input type="radio" name="r2" checked="checked" value="color1"/><img class="color1"
                                                                                     src="{% static 'img/палитра 1.svg' %}">
             </label>
 
             <label class="rad">
-                <input type="radio" name="r2" value="small"/><img class="color2" src="{% static 'img/палитра 2.svg' %}">
+                <input type="radio" name="r2" value="color2"/><img class="color2" src="{% static 'img/палитра 2.svg' %}">
             </label>
 
             <label class="rad">
-                <input type="radio" name="r2" value="small"/><img class="color3" src="{% static 'img/палитра 3.svg' %}">
+                <input type="radio" name="r2" value="color3"/><img class="color3" src="{% static 'img/палитра 3.svg' %}">
             </label>
 
             <label class="rad">
-                <input type="radio" name="r2" value="small"/><img class="color4" src="{% static 'img/палитра 4.svg' %}">
+                <input type="radio" name="r2" value="color4"/><img class="color4" src="{% static 'img/палитра 4.svg' %}">
             </label>
         </div>
         <div class="rect2">
 
         </div>
         <div class="preview">
-            <iframe src="{% url 'template_uc1' %}" height="652px" width="627px" scrolling="yes" frameborder="1" >
+            <iframe src="{% url 'template_uc' %}?param={{ curr }}" height="652px" width="627px" scrolling="yes" frameborder="1" >
         </iframe>
         </div>
     </div>

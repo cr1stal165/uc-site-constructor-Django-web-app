@@ -779,7 +779,7 @@ label, section, .accordion {
 
 .contacts {
     position: relative;
-    top: 2050px;
+    top: 1750px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -792,7 +792,7 @@ label, section, .accordion {
     position: absolute;
     width: 1520px;
     height: 303px;
-    top: 2800px;
+    top: 2500px;
 
 }
 

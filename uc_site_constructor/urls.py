@@ -18,7 +18,6 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 from django.views.decorators.clickjacking import xframe_options_sameorigin
-
 from constructor import views
 
 urlpatterns = [
@@ -28,6 +27,8 @@ urlpatterns = [
     path('take_info/', views.take_info, name="take_info"),
     path('final_page/', views.final_page, name="final_page"),
     path('uc1/', xframe_options_sameorigin(views.template_uc1), name="template_uc1"),
+    path('user_temp2/', xframe_options_sameorigin(views.template_uc2), name="template_uc2"),
+    path('template_uc', xframe_options_sameorigin(views.template_uc), name="template_uc"),
     path('admin/', admin.site.urls),
 ]
 

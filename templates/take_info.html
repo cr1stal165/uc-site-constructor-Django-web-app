@@ -10,8 +10,8 @@
     <title>Document</title>
 </head>
 <body>
-<form method="post" action={% url 'final_page' %}>
-    {% csrf_token %}
+<form method="post" action="{% url 'final_page' %}">
+{% csrf_token %}
     <div class="up">
         <p class="main_text">Введите информацию </p>
         <div class="button1"><a href="{% url 'index' %}" style="text-decoration: none" class="template">Шаблон</a></div>
