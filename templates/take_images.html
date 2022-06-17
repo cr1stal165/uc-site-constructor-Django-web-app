@@ -14,6 +14,7 @@
 <body>
 <form method="post" action={% url 'take_info' %}>
     {% csrf_token %}
+    <input type="hidden" name="r1" value="{{ curr }}">
         <div class="up">
             <p class="main_text">Загрузите изображения</p>
             <div class="button1"><a href="{% url 'index' %}" style="text-decoration: none" class="template">Шаблон</a></div>
@@ -41,7 +42,7 @@
             </div>
         </form>
         <div class="preview">
-            <iframe src="{% url 'template_uc' %}?param={{ curr }}&param_color={{ color }}" height="652px" width="627px" scrolling="yes" frameborder="1"></iframe>
+            <iframe src="{% url 'template_uc' %}?param={{ curr }}&param_color={{ color }}&param_bg_color={{ background_color }}" height="652px" width="627px" scrolling="yes" frameborder="1"></iframe>
         </div>
     </div>
 </form>

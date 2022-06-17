@@ -76,7 +76,7 @@ header{
   height: 52px;
   left: 900px;
   box-sizing: border-box;
-  border: 1.5px solid #A61212;
+
   border-radius: 267px;
   font-family: 'Montserrat';
   font-style: normal;
@@ -89,7 +89,7 @@ header{
 }
 .button_accounts_statement a{
   text-decoration: none;
-  color: #A61212;
+
 }
 
 .upper_block{
@@ -352,7 +352,7 @@ border-radius: 23px;
   text-align: center;
   letter-spacing: 0.05em;
   justify-content: center;
-  color: #A61212;
+
 }
 .new_block_text2{
   position: absolute;
@@ -758,7 +758,7 @@ width: 226px;
 height: 52px;
 left: 471px;
 top:410px;
-background: #A61212;
+
 border-radius: 267px;
 }
 .contacts_quest_button a{
@@ -779,7 +779,7 @@ position: absolute;
 width: 1203.5px;
 
 top: 435px;
-border:  solid #A61212;
+
 }
 .contacts_help_button{
   position: absolute;
