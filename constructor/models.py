@@ -29,10 +29,10 @@ class House(models.Model):
 class Site(models.Model):
     domain = models.CharField(max_length=100)
     template = models.CharField(max_length=100)
-    colors = models.CharField(max_length=100)
-    bg_colors = models.CharField(max_length=100)
-    logo = models.ImageField(upload_to='template_logo')
-    banner = models.ImageField(upload_to='template_banner')
+    colors = models.CharField(max_length=100, null=True, blank=True)
+    bg_colors = models.CharField(max_length=100, null=True, blank=True)
+    logo = models.ImageField(upload_to='template_logo', null=True, blank=True)
+    banner = models.ImageField(upload_to='template_banner', null=True, blank=True)
 
 
 class News(models.Model):

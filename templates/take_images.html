@@ -12,7 +12,7 @@
     <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
 </head>
 <body>
-<form method="post" action={% url 'take_info' %}>
+<form method="post" enctype="multipart/form-data" action={% url 'take_info' %} >
     {% csrf_token %}
     <input type="hidden" name="r1" value="{{ curr }}">
         <div class="up">
@@ -26,21 +26,18 @@
             </button>
         </div>
     <div class="down">
-        <form id="upload-container" method="POST">
             <div class="download_logo">
                 <input type="file" id="file-input-logo" class="inputfile" name="fileLogo"  accept=".jpg, .png">
                 <p class="text" id="feedback1"><img src="../constructor/static/img/download_logo.svg" align="center"><label
                         for="file-input-logo">Загрузить логотип</label>
                 </p>
             </div>
-
             <div class="download_banner">
-                <input type="file" id="file-input-banner" class="inputfile" name="file" accept=".jpg, .png">
+                <input type="file" id="file-input-banner" class="inputfile" name="fileBanner" accept=".jpg, .png">
                 <p class="text" id="feedback2"><img src="../constructor/static/img/download_logo.svg" align="center"><label
                         for="file-input-banner">Загрузить баннер</label>
                 </p>
             </div>
-        </form>
         <div class="preview">
             <iframe src="{% url 'template_uc' %}?param={{ curr }}&param_color={{ color }}&param_bg_color={{ background_color }}" height="652px" width="627px" scrolling="yes" frameborder="1"></iframe>
         </div>

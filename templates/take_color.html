@@ -20,7 +20,6 @@
         <div class="button2"><p class="color">Цвет</p></div>
         <div class="button3"><p class="content">Контент</p></div>
         <div class="button4"><p class="info">Информация</p></div>
-        <button class="button6" ><a class="choose">Применить</a></button>
         <button class="button5"><a href="{% url 'take_images' %}"><img class="arr" src="../constructor/static/img/Arrow3.svg"></a>
         </button>
     </div>
@@ -30,21 +29,15 @@
                 <input type="radio" name="r2" checked="checked" value="color1"/><img class="color1"
                                                                                     src="{% static 'img/палитра 1.svg' %}">
             </label>
-
             <label class="rad">
                 <input type="radio" name="r2" value="color2"/><img class="color2" src="{% static 'img/палитра 2.svg' %}">
             </label>
-
             <label class="rad">
                 <input type="radio" name="r2" value="color3"/><img class="color3" src="{% static 'img/палитра 3.svg' %}">
             </label>
-
             <label class="rad">
                 <input type="radio" name="r2" value="color4"/><img class="color4" src="{% static 'img/палитра 4.svg' %}">
             </label>
-        </div>
-        <div class="rect2">
-
         </div>
         <div class="preview">
             <iframe src="{% url 'template_uc' %}?param={{ curr }}" height="652px" width="627px" scrolling="yes" frameborder="1" >
