@@ -1,9 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.template.response import TemplateResponse
-
-
-
+from constructor.models import Site
 
 
 def index(request):
@@ -11,29 +9,24 @@ def index(request):
 
 
 def take_color(request):
+    site = Site.objects.create(colors="", template="", domain="", bg_colors="", logo=None, banner=None)
     print(request)
-    temp = ""
     if request.method == 'POST':
         r1 = request.POST.get('r1')
         if r1 == "t1":
-            temp = 'template_uc1'
+            site.template = 'template_uc1'
         elif r1 == "t2":
-            temp = 'template_uc2'
+            site.template = 'template_uc2'
         else:
-            temp = 'template_uc3'
-    return render(request, "take_color.html", context={'curr': temp})
+            site.template = 'template_uc3'
+    return render(request, "take_color.html", context={'curr': site.template})
 
 
 def take_images(request):
-    list_colors = ["#F1F1F1", "#3B2A1D",
-                   "#A61212", "#FFFFFF",
-                   "#77CC44", "#FEFAEF",
-                   "#5B7FED", "#FFFFFF"]
     color = ""
     bg_color = ""
     template_name = ""
     if request.method == 'POST':
-        img = request.FILES.get("file")
         template_name = request.POST.get('r1')
         r2 = request.POST.get('r2')
         if r2 == "color1":
@@ -53,10 +46,13 @@ def take_images(request):
 
 
 def take_info(request):
-    temp_name = ""
+    img = None
+    color = ""
+    template_name = ""
     if request.method == 'POST':
-        temp_name = request.POST.get('r1')
-    return render(request, "take_info.html", context={'curr': temp_name})
+        template_name = request.POST.get('r1')
+        img = request.FILES.get("fileLogo")
+    return render(request, "take_info.html", context={'image': img, 'color': color, 'curr': template_name})
 
 
 def template_uc1(request):
@@ -71,9 +67,10 @@ def template_uc2(request):
 def template_uc(request):
     template_name = request.GET.get('param')
     template_color = request.GET.get('param_color')
+    template_image = request.GET.get('param_image')
     template_bg_color = request.GET.get('param_bg_color')
     print(request.GET)
-    return render(request, f'{template_name}.html', context={'color': template_color, 'bg_color': template_bg_color})
+    return render(request, f'{template_name}.html', context={'color': template_color, 'bg_color': template_bg_color, 'image': template_image})
 
 
 def final_page(request):
