@@ -3,13 +3,15 @@ from django.shortcuts import render
 from django.template.response import TemplateResponse
 from constructor.models import Site
 
+site = Site.objects.create(colors="", template="", domain="", bg_colors="", logo=None, banner=None)
+
 
 def index(request):
     return render(request, "constructor.html")
 
 
 def take_color(request):
-    site = Site.objects.create(colors="", template="", domain="", bg_colors="", logo=None, banner=None)
+
     print(request)
     if request.method == 'POST':
         r1 = request.POST.get('r1')
@@ -23,36 +25,28 @@ def take_color(request):
 
 
 def take_images(request):
-    color = ""
-    bg_color = ""
-    template_name = ""
     if request.method == 'POST':
-        template_name = request.POST.get('r1')
         r2 = request.POST.get('r2')
         if r2 == "color1":
-            color = "3B2A1D"
-            bg_color = "F1F1F1"
+            site.color = "3B2A1D"
+            site.bg_color = "F1F1F1"
         elif r2 == "color2":
-            color = "A61212"
-            bg_color = "FFFFFF"
+            site.color = "A61212"
+            site.bg_color = "FFFFFF"
         elif r2 == "color3":
-            color = "77CC44"
-            bg_color = "FEFAEF"
+            site.color = "77CC44"
+            site.bg_color = "FEFAEF"
         else:
-            color = "5B7FED"
-            bg_color = "FFFFFF"
-    print(color)
-    return render(request, "take_images.html", context={'color': color, 'curr': template_name, 'background_color': bg_color})
+            site.color = "5B7FED"
+            site.bg_color = "FFFFFF"
+    return render(request, "take_images.html", context={'color': site.color, 'curr': site.template, 'background_color': site.bg_color})
 
 
 def take_info(request):
-    img = None
-    color = ""
-    template_name = ""
     if request.method == 'POST':
-        template_name = request.POST.get('r1')
-        img = request.FILES.get("fileLogo")
-    return render(request, "take_info.html", context={'image': img, 'color': color, 'curr': template_name})
+        site.template = request.POST.get('r1')
+        site.logo = request.FILES.get("fileLogo")
+    return render(request, "take_info.html", context={'image': site.logo, 'color': site.color, 'curr': site.template})
 
 
 def template_uc1(request):
