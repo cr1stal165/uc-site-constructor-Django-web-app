@@ -14,7 +14,7 @@
 <body>
 <form method="post" enctype="multipart/form-data" action={% url 'take_info' %} >
     {% csrf_token %}
-    <input type="hidden" name="r1" value="{{ curr }}">
+    <input type="hidden" name="site_id" value="{{ site.id }}">
         <div class="up">
             <p class="main_text">Загрузите изображения</p>
             <div class="button1"><a href="{% url 'index' %}" style="text-decoration: none" class="template">Шаблон</a></div>

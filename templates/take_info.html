@@ -12,24 +12,23 @@
 <body>
 <form method="post" action="{% url 'final_page' %}">
     {% csrf_token %}
-    <input type="hidden" name="r3" value="{{ image }}">
+    <input type="hidden" name="site_id" value="{{ site.id }}">
     <div class="up">
         <p class="main_text">Введите информацию </p>
         <div class="button1"><a href="{% url 'index' %}" style="text-decoration: none" class="template">Шаблон</a></div>
         <div class="button2"><a href="{% url 'take_color' %}" style="text-decoration: none" class="color">Цвет</a></div>
         <div class="button3"><a href="{% url 'take_images' %}" style="text-decoration: none" class="content">Контент</a></div>
         <div class="button4"><p class="info">Информация</p></div>
-        <button class="button5"><a href="{% url 'final_page' %}"><img class="arr" src="../constructor/static/img/Arrow3.svg"></a>
-        </button>
+        <button class="button5"><a href="{% url 'final_page' %}"><img class="arr" src="../constructor/static/img/Arrow3.svg"></a></button>
     </div>
     <div class="down">
         <div class="first_rect">
             <p class="text_inn">Ваш номер ИНН</p>
-            <input class="input_inn" type="text" placeholder="Введите свой инн"/>
+            <input class="input_inn" type="text" placeholder="Введите свой инн" />
         </div>
         <div class="second_rect">
             <p class="text_domain">Ваш домен</p>
-            <input class="input_domain" type="text" placeholder="Введите домен"/>
+            <input class="input_domain" type="text" placeholder="Введите домен" />
         </div>
         <div class="preview">
             <iframe src="{% url 'template_uc' %}?param={{ curr }}&param_color={{ color }}&param_image={{ image }}" height="652px" width="627px"

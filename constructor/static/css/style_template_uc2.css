@@ -126,11 +126,17 @@ header{
 .upper_block_img{
   position: absolute;
   width: 1200px;
-height: 552px;
-top: 350px;
-left: 30px;
-background: url('/static/img/Rectangle 15.png');
+  height: 552px;
+  top: 350px;
+  left: 30px;
+  /*background: url('/static/img/Rectangle 7.jpg');*/
+
 }
+
+.img_main{
+  background: url("/static/img/Rectangle 7.jpg");
+}
+
 .upper_block_vector1{
   position: absolute;
   width: 12.37px;

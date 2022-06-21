@@ -225,37 +225,6 @@ iframe{
     scale: 0.1;
 }
 
-.button6{
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 125px;
-    height: 52px;
-    margin-left: 954px;
-    margin-top: -20px;
-    background: #FFFFFF;
-    border: 2px solid #000000;
-    border-radius: 48px;
-}
-
-.choose{
-   position: absolute;
-    width: 98px;
-    height: 20px;
-    margin-left: -49px;
-    margin-top: -9px;
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    /* identical to box height */
-
-
-    color: #000000;
-}
-
 .rad > input { /* HIDE RADIO */
     visibility: hidden; /* Makes input not-clickable */
     position: absolute; /* Remove input from document flow */
