@@ -24,14 +24,14 @@
     <div class="down">
         <div class="first_rect">
             <p class="text_inn">Ваш номер ИНН</p>
-            <input class="input_inn" type="text" placeholder="Введите свой инн" />
+            <input class="input_inn" type="text" name="input1" placeholder="Введите свой инн" />
         </div>
         <div class="second_rect">
             <p class="text_domain">Ваш домен</p>
-            <input class="input_domain" type="text" placeholder="Введите домен" />
+            <input class="input_domain" name="input2" type="text" placeholder="Введите домен" />
         </div>
         <div class="preview">
-            <iframe src="{% url 'template_uc' %}?param={{ curr }}&param_color={{ color }}&param_bg_color={{ background_color }}&param_image={{ image }}" height="652px" width="627px"
+            <iframe src="{% url 'template_uc' %}?site_id={{ site.id }}" height="652px" width="627px"
                     scrolling="yes" frameborder="1"></iframe>
         </div>
     </div>

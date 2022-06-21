@@ -2,17 +2,17 @@ from django.db import models
 
 
 class User(models.Model):
-    name = models.CharField(max_length=20)
-    age = models.IntegerField()
+    name = models.CharField(max_length=20,null=True, blank=True)
+    age = models.IntegerField(null=True, blank=True)
 
 
 class Company(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    name = models.CharField(max_length=100)
-    inn = models.IntegerField()
-    ogrn = models.IntegerField()
-    address = models.CharField(max_length=500)
-    director = models.CharField(max_length=128)
+    name = models.CharField(max_length=100, null=True, blank=True)
+    inn = models.IntegerField(null=True, blank=True)
+    ogrn = models.IntegerField(null=True, blank=True)
+    address = models.CharField(max_length=500, null=True, blank=True)
+    director = models.CharField(max_length=128, null=True, blank=True)
 
 
 class House(models.Model):

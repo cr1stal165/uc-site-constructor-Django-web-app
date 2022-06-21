@@ -3,16 +3,20 @@ from django.shortcuts import render
 from django.template.response import TemplateResponse
 
 from constructor.models import Site
+import main
 
 
 def index(request):
-
     return render(request, "constructor.html")
 
 
 def take_color(request):
-    site = Site.objects.create(colors="", template="", domain="", bg_colors="", logo=None, banner=None)
-    print(request)
+    site_id = request.GET.get('site_id')
+    site = Site.objects.filter(id=site_id).first()
+    if not site:
+        site = Site.objects.create(colors="", template="", domain="", bg_colors="", logo=None, banner=None)
+
+    print(request.user)
     if request.method == 'POST':
         r1 = request.POST.get('r1')
         if r1 == "t1":
@@ -22,7 +26,7 @@ def take_color(request):
         else:
             site.template = 'template_uc3'
         site.save()
-    return render(request, "take_color.html", context={'curr': site.template, 'site': site})
+    return render(request, "take_color.html", context={'site': site})
 
 
 def take_images(request):
@@ -45,7 +49,7 @@ def take_images(request):
             site.bg_colors = "FFFFFF"
         site.save()
     return render(request, "take_images.html",
-                  context={'color': site.colors, 'curr': site.template, 'background_color': site.bg_colors, 'site': site})
+                  context={'site': site})
 
 
 def take_info(request):
@@ -55,8 +59,8 @@ def take_info(request):
         site = Site.objects.get(id=site_id)
         site.logo = request.FILES.get("fileLogo")
         site.save()
-    return render(request, "take_info.html", context={'image': site.logo.url, 'color': site.colors, 'curr': site.template,
-                                                      'background_color': site.bg_colors, 'site': site})
+    return render(request, "take_info.html",
+                  context={'site': site})
 
 
 def template_uc1(request):
@@ -69,22 +73,28 @@ def template_uc2(request):
 
 
 def template_uc(request):
-    template_name = request.GET.get('param')
-    template_color = request.GET.get('param_color')
-    template_image = request.GET.get('param_image')
-    template_bg_color = request.GET.get('param_bg_color')
+    site_id = request.GET.get('site_id')
+    site = Site.objects.get(id=site_id)
     print(request.GET)
-    return render(request, f'{template_name}.html',
-                  context={'color': template_color, 'bg_color': template_bg_color, 'image': template_image})
+    return render(request, f'{site.template}.html',
+                  context={'site': site})
 
 
 def final_page(request):
     site = None
+    inn = ""
+    domain = ""
+    list = main.Main()
+    info = list.get_company("id_123", "id_123")
     if request.method == 'POST':
         site_id = request.POST.get('site_id')
         site = Site.objects.get(id=site_id)
+        inn = request.POST.get('input1')
+        domain = request.POST.get('input2')
+    print(info)
+    return render(request, "final_page.html",
+                  context={'site': site})
 
-    return render(request, "final_page.html", context={'image': site.logo.url, 'color': site.colors, 'curr': site.template,
-                                                      'background_color': site.bg_colors, 'site': site})
+
 
 
