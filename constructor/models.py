@@ -42,5 +42,3 @@ class News(models.Model):
     text = models.CharField(max_length=2000)
     image = models.ImageField(upload_to='news_image')
 
-
-

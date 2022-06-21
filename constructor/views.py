@@ -55,7 +55,8 @@ def take_info(request):
         site = Site.objects.get(id=site_id)
         site.logo = request.FILES.get("fileLogo")
         site.save()
-    return render(request, "take_info.html", context={'image': site.logo, 'color': site.colors, 'curr': site.template, 'site': site})
+    return render(request, "take_info.html", context={'image': site.logo.url, 'color': site.colors, 'curr': site.template,
+                                                      'background_color': site.bg_colors, 'site': site})
 
 
 def template_uc1(request):
@@ -78,6 +79,12 @@ def template_uc(request):
 
 
 def final_page(request):
-    return render(request, "final_page.html")
+    site = None
+    if request.method == 'POST':
+        site_id = request.POST.get('site_id')
+        site = Site.objects.get(id=site_id)
+
+    return render(request, "final_page.html", context={'image': site.logo.url, 'color': site.colors, 'curr': site.template,
+                                                      'background_color': site.bg_colors, 'site': site})
 
 
