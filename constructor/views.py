@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from constructor.models import Site
+from constructor.models import Site, House, Company
 import main
 
 
@@ -75,22 +75,21 @@ def template_uc2(request):
 def template_uc(request):
     site_id = request.GET.get('site_id')
     site = Site.objects.get(id=site_id)
+
     print(request.GET)
     return render(request, f'{site.template}.html',
                   context={'site': site})
 
 
 def final_page(request):
+
     site_id = request.POST.get('site_id')
     site = Site.objects.get(id=site_id)
-    inn = ""
-    domain = ""
-    list = main.Main()
-    info = list.get_company("id_123", "id_123")
-    if request.method == 'POST':
-        inn = request.POST.get('input1')
-        domain = request.POST.get('input2')
-    print(info)
+    company_id = request.POST.get('input1')
+    company = Company.objects.get(inn=company_id)
+    site.company = company
+    site.save()
+
     return render(request, "final_page.html",
                   context={'site': site})
 

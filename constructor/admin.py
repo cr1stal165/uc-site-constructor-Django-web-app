@@ -7,3 +7,6 @@ class PersonAdmin(admin.ModelAdmin):
     pass
 
 
+@admin.register(Company)
+class CompanyAdmin(admin.ModelAdmin):
+    pass

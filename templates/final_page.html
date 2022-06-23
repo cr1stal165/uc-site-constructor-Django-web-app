@@ -14,7 +14,6 @@
 <img src="{% static 'img/cloud.svg' %}">
 <form method="post" action="{% url 'template_uc' %}">
     {% csrf_token %}
-    <input type="hidden" name="r1" value="{{ site.template }}">
     <input type="hidden" name="site_id" value="{{ site.id }}">
     <button class="button1">
         <a href="{% url 'template_uc' %}?site_id={{ site.id }}" class="but1">Продолжить</a>

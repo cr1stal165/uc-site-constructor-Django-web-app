@@ -15,6 +15,7 @@
     {% csrf_token %}
     <input type="hidden" name="r1" value="{{ site.template }}">
     <input type="hidden" name="site_id" value="{{ site.id }}">
+
     <div class="up">
         <p class="main_text">Выберите цвет</p>
         <div class="button1"><a href="{% url 'index' %}" style="text-decoration: none" class="template">Шаблон</a></div>

@@ -34,7 +34,7 @@
         <style>.new_block_date2_text1, .new_block_date1_text1, .new_block_date3_text1{color: #{{ site.colors }};}</style>
         <style>.new_block_date2, .new_block_date1, .new_block_date3{border: 1px solid #{{ site.colors }};}</style>
         <style>.contacts_line{border:  solid #{{ site.colors }};}</style>
-        <style>.contacts_quest_button{background: #{{ site.bg_colors }};}</style>
+        <style>.contacts_quest_button{background: #{{ site.colors }};}</style>
         <style>body{background: #{{ site.bg_colors }};}</style>
         <style>.logo{background: #{{ site.colors }}</style>
 		<div class="button_accounts_statement"><a href="#">Передать показания счета</a></div>
@@ -103,22 +103,22 @@
                 <p>Контакты - {{ contacts }}</p>
             </section>
             <section>
-                <p>ИНН - {{ inn }}</p>
+                <p>ИНН - {{ site.company.inn }}</p>
             </section>
             <section>
                 <p>КПП - {{ kpp }}</p>
             </section>
             <section>
-                <p>Полное наименование - {{ full_name }}</p>
+                <p>Полное наименование - {{ site.company.name }}</p>
             </section>
             <section>
-                <p>ОГРН - {{ ogrn }}</p>
+                <p>ОГРН - {{ site.company.ogrn }}</p>
             </section>
             <section>
-                <p>Генеральный директор - {{ director }}</p>
+                <p>Генеральный директор - {{ site.company.director }}</p>
             </section>
             <section>
-                <p>Юридический адрес - {{ address }}</p>
+                <p>Юридический адрес - {{ site.company.address }}</p>
             </section>
         </div>
 
@@ -134,10 +134,10 @@
 <div class="contacts">
 	<a>КОНТАКTЫ</a>
 	<div class="contacts_block1">"Самая лучшая"</div>
-	<div class="contacts_phone"><a href="#">+7 999 999-99-99</a></div>
-	<div class="contacts_clock"><a href="#">Режим работы </a></div>
-	<div class="contacts_email"><a href="#">example@example.ru</a> </div>
-	<div class="contacts_location"><a href="#">Адрес</a></div>
+	<div class="contacts_phone"><a >+7 999 999-99-99</a></div>
+	<div class="contacts_clock"><a>Режим работы </a></div>
+	<div class="contacts_email"><a>example@example.ru</a> </div>
+	<div class="contacts_location"><a>Адрес - {{ site.company.address }}</a></div>
 	<div class="contacts_line"></div>
 	<div class="contacts_quest_button"><a href="#">Задать вопрос</a></div>
 	<div class="contacts_help_button"> <div class="contscts_help_quest"></div></div>

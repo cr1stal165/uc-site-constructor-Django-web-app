@@ -7,7 +7,7 @@ class User(models.Model):
 
 
 class Company(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
     name = models.CharField(max_length=100, null=True, blank=True)
     inn = models.IntegerField(null=True, blank=True)
     ogrn = models.IntegerField(null=True, blank=True)
@@ -27,6 +27,7 @@ class House(models.Model):
 
 
 class Site(models.Model):
+    company = models.ForeignKey(Company, on_delete=models.CASCADE, null=True, blank=True)
     domain = models.CharField(max_length=100)
     template = models.CharField(max_length=100)
     colors = models.CharField(max_length=100, null=True, blank=True)
