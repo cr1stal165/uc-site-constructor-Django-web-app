@@ -21,19 +21,19 @@
             <div class="button3"><p class="content">Контент</p></div>
             <div class="button4"><p class="info">Информация</p></div>
             <button class="button5"><a href="{% url 'take_info' %}"><img class="arr"
-                                                                         src="../constructor/static/img/Arrow3.svg"></a>
+                                                                         src="{% static 'img/Arrow3.svg' %}"></a>
             </button>
         </div>
     <div class="down">
             <div class="download_logo">
                 <input type="file" id="file-input-logo" class="inputfile" name="fileLogo"  accept=".jpg, .png">
-                <p class="text" id="feedback1"><img src="../constructor/static/img/download_logo.svg" align="center"><label
+                <p class="text" id="feedback1"><img src="{% static 'img/download_logo.svg' %}" align="center"><label
                         for="file-input-logo">Загрузить логотип</label>
                 </p>
             </div>
             <div class="download_banner">
                 <input type="file" id="file-input-banner" class="inputfile" name="fileBanner" accept=".jpg, .png">
-                <p class="text" id="feedback2"><img src="../constructor/static/img/download_logo.svg" align="center"><label
+                <p class="text" id="feedback2"><img src="{% static 'img/download_logo.svg' %}" align="center"><label
                         for="file-input-banner">Загрузить баннер</label>
                 </p>
             </div>

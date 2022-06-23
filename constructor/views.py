@@ -88,7 +88,6 @@ def final_page(request):
     list = main.Main()
     info = list.get_company("id_123", "id_123")
     if request.method == 'POST':
-
         inn = request.POST.get('input1')
         domain = request.POST.get('input2')
     print(info)
