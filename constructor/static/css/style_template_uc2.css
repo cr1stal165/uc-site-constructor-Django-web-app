@@ -967,8 +967,13 @@ label, section, .accordion {
     border-radius: 10px;
 }
 
-img{
+.imageLogo{
+    width: 52px;
+    height: 52px;
+}
+
+.imageBanner{
     width: 971px;
     height: 413px;
-    border-radius: 10px;
+     border-radius: 10px;
 }

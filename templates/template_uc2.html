@@ -9,18 +9,16 @@
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Poiret+One&display=swap');
-
 	</style>
     <title>Template</title>
-
-
 </head>
-
-	
 <body>
 	<header>
-
-		<div class="logo" ></div>
+		<div class="logo" >
+            {% if site.logo %}
+            <img class="imageLogo" src="{{ site.logo.url }}" width="52px" height="52px">
+            {% endif %}
+        </div>
 		<div class="menu_top">
 			<ul>
 			<li> О КОМПАНИИ</li>
@@ -46,10 +44,10 @@
 		<a>УПРАВЛЯЮЩАЯ КОМПАНИЯ "САМАЯ ЛУЧШАЯ"</a>
 		<div class="upper_block_text">Добро пожаловать на наш официальный сайт! Изучайте актуальную информацию  ТСЖ, новости и объявления.</div>
 		<div class="upper_block_img">
-            {% if site.logo %}
-            <img src="{{ site.logo.url }}">
+            {% if site.banner %}
+            <img class="imageBanner"  src="{{ site.banner.url }}">
             {% else %}
-                <img src="{% static 'img/Rectangle 7.jpg' %}">
+                <img class="imageBanner" src="{% static 'img/Rectangle 7.jpg' %}">
             {% endif %}
 			<div class="upper_block_vector1"></div>
 			<div class="upper_block_vector2"></div>

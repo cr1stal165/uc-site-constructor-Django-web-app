@@ -57,6 +57,7 @@ def take_info(request):
         site_id = request.POST.get('site_id')
         site = Site.objects.get(id=site_id)
         site.logo = request.FILES.get("fileLogo")
+        site.banner = request.FILES.get("fileBanner")
         site.save()
     return render(request, "take_info.html",
                   context={'site': site})
