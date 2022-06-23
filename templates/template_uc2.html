@@ -46,11 +46,14 @@
 		<a>УПРАВЛЯЮЩАЯ КОМПАНИЯ "САМАЯ ЛУЧШАЯ"</a>
 		<div class="upper_block_text">Добро пожаловать на наш официальный сайт! Изучайте актуальную информацию  ТСЖ, новости и объявления.</div>
 		<div class="upper_block_img">
-            <img src="{{ image }}">
+            {% if site.logo %}
+            <img src="{{ site.logo.url }}">
+            {% else %}
+                <img src="{% static 'img/Rectangle 7.jpg' %}">
+            {% endif %}
 			<div class="upper_block_vector1"></div>
 			<div class="upper_block_vector2"></div>
 		</div>
-		
 	</div>
 	
 	<div class="block_2">

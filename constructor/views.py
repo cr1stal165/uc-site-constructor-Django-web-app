@@ -1,6 +1,4 @@
-from django.http import HttpResponse
 from django.shortcuts import render
-from django.template.response import TemplateResponse
 
 from constructor.models import Site
 import main
@@ -30,11 +28,11 @@ def take_color(request):
 
 
 def take_images(request):
-    site = None
+
+    site_id = request.POST.get('site_id')
+    site = Site.objects.get(id=site_id)
     if request.method == 'POST':
         r2 = request.POST.get('r2')
-        site_id = request.POST.get('site_id')
-        site = Site.objects.get(id=site_id)
         if r2 == "color1":
             site.colors = "3B2A1D"
             site.bg_colors = "F1F1F1"
@@ -81,14 +79,14 @@ def template_uc(request):
 
 
 def final_page(request):
-    site = None
+    site_id = request.POST.get('site_id')
+    site = Site.objects.get(id=site_id)
     inn = ""
     domain = ""
     list = main.Main()
     info = list.get_company("id_123", "id_123")
     if request.method == 'POST':
-        site_id = request.POST.get('site_id')
-        site = Site.objects.get(id=site_id)
+
         inn = request.POST.get('input1')
         domain = request.POST.get('input2')
     print(info)
