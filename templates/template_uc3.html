@@ -20,8 +20,10 @@
 <body>
 <div class="center_list">
     <header>
-
         <div class="logo">
+            {% if site.logo %}
+            <img src="{{ site.logo.url }}" width="52px" height="52px">
+            {% endif %}
         </div>
         <div class="menu_top">
             <ul>
@@ -63,9 +65,9 @@
 
         <div class="block_1_img">
             {% if site.banner %}
-            <img src="{{ site.banner.url }}">
+            <img src="{{ site.banner.url }}" width="750" height="350">
             {% else %}
-                <img src="{% static 'img/Rectangle 7.jpg' %} ">
+                <img src="{% static 'img/Rectangle 7.jpg' %} " width="750" height="350">
             {% endif %}
             <p>Добро пожаловать на наш официальный сайт! Изучайте актуальную информацию ТСЖ, новости и объявления.</p>
             <div class="block_1_vector1"></div>
@@ -165,22 +167,22 @@
         <div class="contacts_block1"><p>"Самая лучшая"</p></div>
         <div class="contacts1">
             <div class="phone"></div>
-            <a href="#">+7 999 999-99-99</a>
+            <a>+7 999 999-99-99</a>
         </div>
 
         <div class="contacts2">
             <div class="contacts2_line"></div>
-            <a href="#">example@example.ru</a>
+            <a>example@example.ru</a>
         </div>
         <div class="contacts_work">
             <div class="contacts_work_line1"></div>
             <div class="contacts_work_line2"></div>
-            <a href="#">Режим работы</a>
+            <a>Режим работы</a>
         </div>
         <div class="contacts_location">
             <div class="location"></div>
             <div class="location_line"></div>
-            <a href="#">Адрес</a>
+            <a>Адрес</a>
         </div>
         <div class="contacts_quest_button"><a href="#">Задать вопрос</a></div>
         <div class="contacts_help_button">
