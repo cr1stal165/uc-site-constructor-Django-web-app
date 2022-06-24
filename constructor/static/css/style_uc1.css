@@ -107,7 +107,6 @@ body {
     height: 413px;
     left: 550px;
     top: 417px;
-    background-image: url('/static/img/Rectangle 7.jpg');
     border-radius: 54px;
 }
 
@@ -129,7 +128,7 @@ body {
 .button_1 {
     position: absolute;
     width: 430px;
-    height: 64.04px;
+    height: 64px;
     left: 40px;
     top: 662px;
     background: #A61212;

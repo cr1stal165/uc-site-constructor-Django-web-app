@@ -33,10 +33,11 @@
         <style>.button_accounts_statement a{color: #{{ site.colors }};}</style>
         <style>.new_block_date2_text1, .new_block_date1_text1, .new_block_date3_text1{color: #{{ site.colors }};}</style>
         <style>.new_block_date2, .new_block_date1, .new_block_date3{border: 1px solid #{{ site.colors }};}</style>
-        <style>.contacts_line{border:  solid #{{ site.colors }};}</style>
+        <style>.contacts_line{border: 3px solid #{{ site.colors }};}</style>
         <style>.contacts_quest_button{background: #{{ site.colors }};}</style>
         <style>body{background: #{{ site.bg_colors }};}</style>
         <style>.logo{background: #{{ site.colors }}</style>
+
 		<div class="button_accounts_statement"><a href="#">Передать показания счета</a></div>
 	</header>
 
@@ -106,9 +107,6 @@
                 <p>ИНН - {{ site.company.inn }}</p>
             </section>
             <section>
-                <p>КПП - {{ kpp }}</p>
-            </section>
-            <section>
                 <p>Полное наименование - {{ site.company.name }}</p>
             </section>
             <section>
@@ -140,7 +138,7 @@
 	<div class="contacts_location"><a>Адрес - {{ site.company.address }}</a></div>
 	<div class="contacts_line"></div>
 	<div class="contacts_quest_button"><a href="#">Задать вопрос</a></div>
-	<div class="contacts_help_button"> <div class="contscts_help_quest"></div></div>
+	<div class="contacts_help_button"> <div class="contacts_help_quest"></div></div>
 </div>	
 </body >
 </html>

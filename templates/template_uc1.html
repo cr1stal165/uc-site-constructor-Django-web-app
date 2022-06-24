@@ -16,11 +16,14 @@
 <body>
 <div class="center_list">
     <div class="navbar">
-        <div class="logo"></div>
+        <div class="logo">
+            {% if site.logo %}
+            <img src="{{ site.logo.url }}" width="71px" height="71px">
+            {% endif %}
+        </div>
         <div class="menu-top">
             <ul> НАЗВАНИЕ УК</ul>
         </div>
-
         <div>
             <ul>
                 <div class="navbar-1"> О КОМПАНИИ</div>
@@ -29,11 +32,33 @@
                 <div class="navbar-4"> КОНТАКТЫ</div>
             </ul>
         </div>
+        <style>.button_1, .button_2, .button_quest, .button_help{background-color: #{{ site.colors }};}</style>
+        <style>.line1, .line2{background-color: #{{ site.colors }};}</style>
+        <style>.contacts_work_line1, .contacts_work_line2{background-color: #{{ site.colors }};}</style>
+        <style>.contacts_work{border: 3px solid #{{ site.colors }}}</style>
+        <style>.arrow-1-bottom, .arrow-2-bottom{background-color: #{{ site.colors }};}</style>
+        <style>.arrow-1-top, .arrow-2-top{background-color: #{{ site.colors }};}</style>
+        <style>.location, .location::before{border: 3px solid #{{ site.colors }}}</style>
+        <style>.location_line{border-top: 19px solid #{{ site.colors }}}</style>
+{#        <style>.contacts_work{border: #{{ site.colors }}}</style>#}
+{#        <style>.button_accounts_statement{border: 1.5px solid #{{ site.colors }};}</style>#}
+{#        <style>.button_accounts_statement a{color: #{{ site.colors }};}</style>#}
+        <style>.new_block_date2_text1, .new_block_date1_text1, .new_block_date3_text1{color: #{{ site.colors }};}</style>
+        <style>.new_block_date2, .new_block_date1, .new_block_date3{border: 1px solid #{{ site.colors }};}</style>
+        <style>body{background: #{{ site.bg_colors }};}</style>
+        <style>.logo{background: #{{ site.colors }}</style>
+{#		<div class="button_accounts_statement"><a href="#">Передать показания счета</a></div>#}
     </div>
     <p class="text">Управляющая компания “Самая лучшая”</p>
     <p class="text1">Добро пожаловать на наш официальный сайт! Изучайте актуальную информацию ТСЖ, новости и
         объявления.</p>
-    <div class="img1"><img src={{image}}></div>
+    <div class="img1">
+        {% if site.banner %}
+            <img src="{{ site.banner.url }}">
+        {% else %}
+            <img src="{% static 'img/Rectangle 7.jpg' %}">
+        {% endif %}
+    </div>
     <p class="text2"> Предоставляем полный спектр услуг по профессиональному управлению и техническому обслуживанию
         жилищного фонда.</p>
 
@@ -52,20 +77,16 @@
             </div>
             <p class="new_block_text1">текст новости текст новости текст новости текст новости текст новости </p>
         </div>
-
         <div class="line1">
         </div>
-
         <div class="new_block2">
             <div class="new_block_date2">
                 <p class="new_block_date2_text1">01.01.01</p>
             </div>
             <p class="new_block_text2">текст новости текст новости текст новости текст новости текст новости </p>
         </div>
-
         <div class="line2">
         </div>
-
         <div class="new_block3">
             <div class="new_block_date3">
                 <p class="new_block_date3_text1">01.01.01</p>
@@ -81,9 +102,7 @@
         <div class="arrow-2-top"></div>
         <div class="arrow-2-bottom"></div>
     </div>
-
     <p class="report"> ОТЧЕТНОСТЬ</p>
-
     <div class="all_report">
         <br><br><br><br><br>
         <div class="accordion">
@@ -93,22 +112,19 @@
                 <p>Контакты - {{ contacts }}</p>
             </section>
             <section>
-                <p>ИНН - {{ inn }}</p>
+                <p>ИНН - {{ site.company.inn }}</p>
             </section>
             <section>
-                <p>КПП - {{ kpp }}</p>
+                <p>Полное наименование - {{ site.company.name }}</p>
             </section>
             <section>
-                <p>Полное наименование - {{ full_name }}</p>
+                <p>ОГРН - {{ site.company.ogrn }}</p>
             </section>
             <section>
-                <p>ОГРН - {{ ogrn }}</p>
+                <p>Генеральный директор - {{ site.company.director }}</p>
             </section>
             <section>
-                <p>Генеральный директор - {{ director }}</p>
-            </section>
-            <section>
-                <p>Юридический адрес - {{ address }}</p>
+                <p>Юридический адрес - {{ site.company.address }}</p>
             </section>
         </div>
 
@@ -122,40 +138,31 @@
     </div>
     <p class="contacts">КОНТАКТЫ</p>
     <div class="all_contacts">
-
         <div class="contacts1">
             <div class="phone"></div>
             <a href="#">+7 999 999-99-99</a>
         </div>
-
-
         <div class="contacts2">
             <div class="contacts2_line"></div>
             <a href="#">example@example.ru</a>
-
         </div>
-
         <div class="contacts3">
             <p href="#">Самая лучшая</p>
-
         </div>
         <div class="contacts_work">
             <div class="contacts_work_line1"></div>
             <div class="contacts_work_line2"></div>
             <a href="#">Режим работы</a>
         </div>
-
         <div class="contacts_location">
             <div class="location"></div>
             <div class="location_line"></div>
             <a href="#">Адрес</a>
         </div>
-
         <div class="button_quest">
             <a href="#">Задать вопрос</a>
         </div>
         <a class="button_help" href="#"></a>
-
     </div>
 </div>
 </body>
