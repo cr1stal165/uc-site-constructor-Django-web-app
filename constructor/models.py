@@ -17,13 +17,13 @@ class Company(models.Model):
 
 class House(models.Model):
     company = models.ForeignKey(Company, on_delete=models.CASCADE, null=True, blank=True)
-    address = models.CharField(max_length=500)
-    kadastr_number = models.IntegerField()
-    building_year = models.IntegerField()
-    year_of_commissioning = models.IntegerField()
-    floor = models.IntegerField()
-    room = models.IntegerField()
-    total_floor_space = models.IntegerField()
+    address = models.CharField(max_length=500, null=True, blank=True)
+    kadastr_number = models.IntegerField(null=True, blank=True)
+    building_year = models.IntegerField(null=True, blank=True)
+    year_of_commissioning = models.IntegerField(null=True, blank=True)
+    floor = models.IntegerField(null=True, blank=True)
+    room = models.IntegerField(null=True, blank=True)
+    total_floor_space = models.IntegerField(null=True, blank=True)
 
 
 class Site(models.Model):
@@ -34,6 +34,7 @@ class Site(models.Model):
     bg_colors = models.CharField(max_length=100, null=True, blank=True)
     logo = models.ImageField(upload_to='template_logo', null=True, blank=True)
     banner = models.ImageField(upload_to='template_banner', null=True, blank=True)
+    list_houses = models.FileField(upload_to='template_file', null=True, blank=True)
 
 
 class News(models.Model):

@@ -30,6 +30,7 @@ urlpatterns = [
     path('user_temp2/', xframe_options_sameorigin(views.template_uc2), name="template_uc2"),
     path('uc3/', xframe_options_sameorigin(views.template_uc3), name="template_uc3"),
     path('template_uc', xframe_options_sameorigin(views.template_uc), name="template_uc"),
+    path('show_houese/', views.show_houses, name="show_houses"),
     path('admin/', admin.site.urls),
 ]
 
