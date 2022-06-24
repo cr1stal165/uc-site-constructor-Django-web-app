@@ -16,7 +16,7 @@ class Company(models.Model):
 
 
 class House(models.Model):
-    company = models.ForeignKey(Company, on_delete=models.CASCADE)
+    company = models.ForeignKey(Company, on_delete=models.CASCADE, null=True, blank=True)
     address = models.CharField(max_length=500)
     kadastr_number = models.IntegerField()
     building_year = models.IntegerField()

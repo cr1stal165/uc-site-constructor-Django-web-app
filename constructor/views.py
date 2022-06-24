@@ -1,7 +1,6 @@
 from django.shortcuts import render
 
 from constructor.models import Site, House, Company
-import main
 
 
 def index(request):
@@ -22,7 +21,7 @@ def take_color(request):
             site.template = 'template_uc1'
         elif r1 == "t2":
             site.template = 'template_uc2'
-        else:
+        elif r1 == "t3":
             site.template = 'template_uc3'
         site.save()
     return render(request, "take_color.html", context={'site': site})
@@ -64,12 +63,15 @@ def take_info(request):
 
 
 def template_uc1(request):
-    request.GET.get('param')
     return render(request, "template_uc1.html")
 
 
 def template_uc2(request):
     return render(request, "template_uc2.html")
+
+
+def template_uc3(request):
+    return render(request, "template_uc3.html")
 
 
 def template_uc(request):

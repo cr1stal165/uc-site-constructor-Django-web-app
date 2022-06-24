@@ -28,6 +28,7 @@ urlpatterns = [
     path('final_page/', views.final_page, name="final_page"),
     path('uc1/', xframe_options_sameorigin(views.template_uc1), name="template_uc1"),
     path('user_temp2/', xframe_options_sameorigin(views.template_uc2), name="template_uc2"),
+    path('uc3/', xframe_options_sameorigin(views.template_uc3), name="template_uc3"),
     path('template_uc', xframe_options_sameorigin(views.template_uc), name="template_uc"),
     path('admin/', admin.site.urls),
 ]
