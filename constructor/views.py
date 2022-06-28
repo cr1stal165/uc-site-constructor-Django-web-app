@@ -101,7 +101,11 @@ def final_page(request):
         houses = cursor.fetchall()
         with open("list_houses.txt", 'w') as file:
             for row in houses:
-                file.write("Дом " + str(row[0]) + "\t" + "Адрес: " + row[1])
+                file.write("Дом " + str(row[0]) + "\tАдрес: " + str(row[1]) + "\tКадастровый номер: " + str(row[2])
+                           + "\tГод постройки: " + str(row[3]) + "\tГод ввода в эксплуатацию: " + str(row[4])
+                           + "\tКол-во этажей: " + str(row[5]) + "\tКол-во квартир: " + str(row[6])
+                           + "\tОбщая площадь помещений, м2: " + str(row[7]))
+
                 file.write("\n")
             site.list_houses = file
             site.save()
@@ -122,3 +126,4 @@ def show_houses(request):
     response = HttpResponse(content, content_type='text/plain')
     response['Content-Disposition'] = 'attachment; filename={0}'.format(filename)
     return response
+

@@ -21,10 +21,10 @@
         </div>
 		<div class="menu_top">
 			<ul>
-			<li><a href="#info"> О КОМПАНИИ</a></li>
-			<li><a href="#news" > НОВОСТИ</a></li>
-			<li><a href="#report"> ОТЧЕТНОСТЬ </a></li>
-			<li><a href="#contacts"> КОНТАКTЫ </a></li>
+			<li><a style="text-decoration: none; " class="up_name" href="#info"> О КОМПАНИИ</a></li>
+			<li><a style="text-decoration: none; " class="up_name" href="#news" > НОВОСТИ</a></li>
+			<li><a style="text-decoration: none; " class="up_name" href="#report"> ОТЧЕТНОСТЬ </a></li>
+			<li><a style="text-decoration: none; " class="up_name" href="#contacts"> КОНТАКTЫ </a></li>
 			</ul>
 		</div>
         <style>.button_quest{background-color: #{{ site.colors }}}</style>
@@ -50,8 +50,7 @@
             {% else %}
                 <img class="imageBanner" src="{% static 'img/Rectangle 7.jpg' %}">
             {% endif %}
-			<div class="upper_block_vector1"></div>
-			<div class="upper_block_vector2"></div>
+
 		</div>
 	</div>
 	
@@ -92,9 +91,10 @@
 			<div class="new_block_vector2"></div>
 		</div>
 	</div>
-    <p class="report" id="report"> ОТЧЕТНОСТЬ</p>
+
 	<div class="all_report">
-        <br><br><br><br><br>
+        <p class="rep">Отчетность</p>
+        <br><br>
         <div class="accordion">
             <input id="toggle1" type="radio" class="accordion-toggle" name="toggle"/>
             <label for="toggle1">Общая информация об УК</label>
@@ -136,7 +136,7 @@
 	<div class="contacts_location"><a>Адрес - {{ site.company.address }}</a></div>
 	<div class="contacts_line"></div>
 	<div class="contacts_quest_button"><a href="#">Задать вопрос</a></div>
-	<div class="contacts_help_button"> <div class="contacts_help_quest"></div></div>
+{#	<div class="contacts_help_button"> <div class="contacts_help_quest"></div></div>#}
 </div>	
 </body >
 </html>

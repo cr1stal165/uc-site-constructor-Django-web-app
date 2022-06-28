@@ -35,7 +35,7 @@ header {
     width: 600.04px;
     height: 52px;
     left: 73px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -58,7 +58,7 @@ header {
     height: 52px;
     left: 659px;
     box-sizing: border-box;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -86,7 +86,7 @@ header {
     box-sizing: border-box;
 
     border-radius: 267px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -110,7 +110,7 @@ header {
 }
 
 .upper_block a {
-    font-family: 'Poiret One';
+    font-family: 'Poiret One', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 77.6467px;
@@ -126,7 +126,7 @@ header {
     width: 471px;
     height: 145px;
     left: 580px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -187,7 +187,7 @@ header {
     height: 416px;
     left: 120px;
 
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -237,7 +237,7 @@ header {
     top: 10px;
     text-decoration: none;
     justify-content: center;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -261,7 +261,7 @@ header {
     width: 400px;
     height: 80px;
     left: 660px;
-    font-family: 'Poiret One';
+    font-family: 'Poiret One', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 78px;
@@ -295,7 +295,7 @@ header {
     width: 803.08px;
     height: 92.58px;
     left: 233.72px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -320,7 +320,7 @@ header {
     position: absolute;
     width: 50.45px;
     height: 29.72px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 10.2865px;
@@ -378,7 +378,7 @@ header {
     position: absolute;
     width: 50.45px;
     height: 29.72px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 10.2865px;
@@ -396,7 +396,7 @@ header {
     width: 803.08px;
     height: 92.58px;
     left: 233.72px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -429,7 +429,7 @@ header {
     position: absolute;
     width: 50.45px;
     height: 29.72px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 10.2865px;
@@ -447,7 +447,7 @@ header {
     width: 803.08px;
     height: 92.58px;
     left: 233.72px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -506,17 +506,15 @@ header {
 
 .report {
     position: absolute;
-    width: 1083px;
-    height: 611px;
-    left: 190px;
-    top: 1755px;
+    left: 30px;
+    top: 1700px;
 }
 
 .report a {
     position: absolute;
     width: 513px;
     height: 98px;
-    font-family: 'Poiret One';
+    font-family: 'Poiret One', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 78px;
@@ -555,7 +553,7 @@ header {
     width: 341px;
     height: 42px;
     left: 70px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -582,7 +580,7 @@ header {
     width: 341px;
     height: 42px;
     left: 70px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -609,7 +607,7 @@ header {
     width: 341px;
     height: 42px;
     left: 70px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -636,7 +634,7 @@ header {
     width: 341px;
     height: 42px;
     left: 70px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -658,7 +656,7 @@ header {
     width: 441px;
     height: 42px;
     left: 70px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -693,7 +691,7 @@ header {
     width: 513px;
     height: 98px;
     left: 390px;
-    font-family: 'Poiret One';
+    font-family: 'Poiret One', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 78px;
@@ -710,7 +708,7 @@ header {
     height: 35.58px;
     left: 500px;
     top: 130px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 20.3294px;
@@ -737,7 +735,7 @@ header {
     width: 228.71px;
     height: 20.58px;
     left: 40px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -763,7 +761,7 @@ header {
     width: 228.71px;
     height: 26.58px;
     left: 50px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -788,7 +786,7 @@ header {
     width: 228.71px;
     height: 20.58px;
     left: 40px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -814,7 +812,7 @@ header {
     width: 228.71px;
     height: 26.58px;
     left: 50px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -839,7 +837,7 @@ header {
     width: 179.56px;
     height: 52.04px;
     left: 37px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -972,6 +970,10 @@ label, section, .accordion {
     height: 52px;
 }
 
+.up_name{
+    color: #1b1b1b;
+}
+
 .imageBanner{
     width: 1215px;
     height: 552px;
@@ -980,7 +982,12 @@ label, section, .accordion {
 
 .houses_info{
     margin-left: 15px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     color: #000000;
 }
 
+.rep{
+    margin-top: 130px;
+    font-family: 'Poiret One', sans-serif;
+    font-size: 78px;
+}

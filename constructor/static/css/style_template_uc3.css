@@ -33,7 +33,7 @@ header{
     width: 750.04px;
     height: 52px;
     left: 83px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -56,7 +56,7 @@ header{
     top: 228px;
 }
 .block_1 p{
-    font-family: 'Stolzl';
+    font-family: 'Stolzl', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 70px;
@@ -76,7 +76,7 @@ header{
     position: absolute;
     width: 448.7px;
     height: 79.78px;
-    font-family: 'Stolzl';
+    font-family: 'Stolzl', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 40px;
@@ -96,7 +96,7 @@ header{
 }
 .block_1 li a{
     margin-top: 40px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -120,7 +120,7 @@ header{
 }
 .block_1_contacts_button_quest a{
     margin-top: 10px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -144,7 +144,7 @@ header{
 }
 .block_1_contacts_button_accounts_statement a{
     margin-top: 14px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -169,7 +169,7 @@ header{
     width: 624px;
     height: 147px;
     top: 380px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
@@ -185,7 +185,7 @@ header{
     top: 190px;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(4.88136px);
-    background: url('images/Vector\ 1.png');
+    background: url('/static/img/Vector 1.png');
 
 }
 .block_1_vector2{
@@ -196,7 +196,7 @@ header{
     top: 190px;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(4.88136px);
-    background: url('images/Vector\ 2.png');
+    background: url('/static/img/Vector 2.png');
   
 }
 .block_2{
@@ -209,7 +209,7 @@ header{
 .block_2 p{
     position: absolute;
     top: 50px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
@@ -239,7 +239,7 @@ header{
   position: absolute;
 width: 652px;
 height: 108px;
-font-family: 'Stolzl';
+font-family: 'Stolzl', sans-serif;
 font-style: normal;
 font-weight: 300;
 font-size: 70px;
@@ -257,7 +257,7 @@ left: 1440.45px;
 top: 1215.27px;
 border: 3px solid #A61212;
 box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
-background-image: url('images/Vector 2.png');
+background-image: url('/static/img/Vector 2.png');
 }
 .new_block1{
   position: absolute;
@@ -270,7 +270,7 @@ position: absolute;
 width: 803.08px;
 height: 92.58px;
 left: 233.72px;
-font-family: 'Montserrat';
+font-family: 'Montserrat', sans-serif;
 font-style: normal;
 font-weight: 300;
 font-size: 18px;
@@ -293,7 +293,7 @@ border-radius: 23px;
   position: absolute;
 width: 50.45px;
 height: 29.72px;
-font-family: 'Montserrat';
+font-family: 'Montserrat', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 10.2865px;
@@ -346,7 +346,7 @@ border-radius: 23px;
   position: absolute;
   width: 50.45px;
   height: 29.72px;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 10.2865px;
@@ -363,7 +363,7 @@ border-radius: 23px;
   width: 803.08px;
   height: 92.58px;
   left: 233.72px;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -393,7 +393,7 @@ border-radius: 23px;
   position: absolute;
   width: 50.45px;
   height: 29.72px;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 10.2865px;
@@ -410,7 +410,7 @@ border-radius: 23px;
   width: 803.08px;
   height: 92.58px;
   left: 233.72px;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -539,7 +539,7 @@ border-radius: 23px;
     left: 15px;
     top:5px;
     transform: matrix(-1, 0, 0, 1, 0, 0);
-    background-image: url('images/Vector\ 3.png');
+    background-image: url('/static/img/Vector 3.png');
 }
 .new_block_vector2{
     position: absolute;
@@ -548,7 +548,7 @@ border-radius: 23px;
     left: 10px;
     top:8px;
     transform: matrix(1, 0, 0, -1, 0, 0);
-    background-image: url('images/Vector\ 3.png');
+    background-image: url('/static/img/Vector 3.png');
 }
 .block_4{
     position: absolute;
@@ -667,7 +667,7 @@ top: 2465px;
 }
 .contacts p {
   position: absolute;
-  font-family: 'Stolzl';
+  font-family: 'Stolzl', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 70px;
@@ -681,7 +681,7 @@ top: 2465px;
   position: absolute;
   width: 1170px;
   top: 130px;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 20.3294px;
@@ -693,7 +693,7 @@ top: 2465px;
 .contacts_block1 p{
   position: absolute;
 
-  font-family: 'Stolzl';
+  font-family: 'Stolzl', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
@@ -736,7 +736,7 @@ color: #000000;
   position: absolute;
   width: 240px;
   height: 42px;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
@@ -761,7 +761,7 @@ border-radius: 267px;
 .contacts_quest_button a{
   top: 9px;
 position: absolute;
-font-family: 'Montserrat';
+font-family: 'Montserrat', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
@@ -786,7 +786,7 @@ text-decoration: none;
  justify-content: center;
  font-size: 62px;
   color: #ffffff;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
 }
@@ -803,7 +803,7 @@ text-decoration: none;
   width: 115px;
   height: 42px;
   top: 0px;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -868,7 +868,7 @@ text-decoration: none;
   top: 20px;
   width: 23px;
   height: 20px;
-  background-image: url('images/phone.png')
+  background-image: url('/static/img/phone.png')
   
 }
 .contacts1 a{
@@ -876,7 +876,7 @@ text-decoration: none;
   width: 270px;
   height: 40px;
   top: 20px;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
@@ -915,7 +915,7 @@ text-decoration: none;
   position: absolute;
   width: 325px;
   top: -5px;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
@@ -928,6 +928,10 @@ text-decoration: none;
 
 .houses_info{
     margin-left: 15px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     color: #000000;
+}
+
+.up_name{
+    color: #1b1b1b;
 }

@@ -818,7 +818,7 @@ label, section, .accordion {
     width: 270px;
     height: 40px;
     top: 20px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
@@ -861,7 +861,7 @@ label, section, .accordion {
     position: absolute;
     width: 325px;
     top: -5px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
@@ -880,7 +880,7 @@ label, section, .accordion {
 
 .contacts3 p {
     position: relative;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -927,7 +927,7 @@ label, section, .accordion {
     position: absolute;
     width: 240px;
     height: 42px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
@@ -952,7 +952,7 @@ label, section, .accordion {
     width: 115px;
     height: 42px;
     top: 0px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -979,7 +979,7 @@ label, section, .accordion {
     height: 65px;
     top: 15px;
     position: relative;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -1007,7 +1007,7 @@ label, section, .accordion {
     justify-content: center;
     font-size: 62px;
     color: #ffffff;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
 }
@@ -1047,6 +1047,10 @@ label, section, .accordion {
     top: -5px;
 }
 
+.up_name{
+    color: #1b1b1b;
+}
+
 .location_line:after {
     content: '';
     display: inline-block;
@@ -1059,7 +1063,7 @@ label, section, .accordion {
 
 .houses_info{
     margin-left: 15px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     color: #000000;
 }
 
