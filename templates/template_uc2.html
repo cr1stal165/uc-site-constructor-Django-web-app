@@ -21,10 +21,10 @@
         </div>
 		<div class="menu_top">
 			<ul>
-			<li> О КОМПАНИИ</li>
-			<li> НОВОСТИ </li>
-			<li > ОТЧЕТНОСТЬ </li>
-			<li> КОНТАКTЫ </li>
+			<li><a href="#info"> О КОМПАНИИ</a></li>
+			<li><a href="#news" > НОВОСТИ</a></li>
+			<li><a href="#report"> ОТЧЕТНОСТЬ </a></li>
+			<li><a href="#contacts"> КОНТАКTЫ </a></li>
 			</ul>
 		</div>
         <style>.button_quest{background-color: #{{ site.colors }}}</style>
@@ -42,7 +42,7 @@
 	</header>
 
 	<div class="upper_block">
-		<a>{{ site.company.name }}</a>
+		<a id="info">{{ site.company.name }}</a>
 		<div class="upper_block_text">Добро пожаловать на наш официальный сайт! Изучайте актуальную информацию  ТСЖ, новости и объявления.</div>
 		<div class="upper_block_img">
             {% if site.banner %}
@@ -62,7 +62,7 @@
 		</div></div>
 	</div>   
 	
-	<div class="new_block">
+	<div class="new_block" id="news">
 		<div class="new_text">НОВОСТИ</div>
 		
 		<div class="new_block1"> 
@@ -82,9 +82,7 @@
 
 		<div class="new_block3"> 
 				<div class="new_block_date3"><div class="new_block_date3_text1">01.01.01</div></div>
-				<div class="new_block_text3">текст новости текст новости текст новости текст новости текст новости </div>		
-				
-
+				<div class="new_block_text3">текст новости текст новости текст новости текст новости текст новости </div>
 		</div>	
 		<div class="new_block_elipse1">
 			<div class="new_block_vector1"></div>
@@ -94,7 +92,7 @@
 			<div class="new_block_vector2"></div>
 		</div>
 	</div>
-    <p class="report"> ОТЧЕТНОСТЬ</p>
+    <p class="report" id="report"> ОТЧЕТНОСТЬ</p>
 	<div class="all_report">
         <br><br><br><br><br>
         <div class="accordion">
@@ -120,7 +118,7 @@
             </section>
         </div>
 
-        <div class="accordion">
+        <div class="accordion" >
             <input id="toggle2" type="radio" class="accordion-toggle" name="toggle"/>
             <label for="toggle2">Дома в управлении</label>
             <section>
@@ -129,7 +127,7 @@
         </div>
     </div>
 	<div class="contacts_fon"> </div>
-<div class="contacts">
+<div class="contacts" id="contacts">
 	<a>КОНТАКTЫ</a>
 	<div class="contacts_block1">"Самая лучшая"</div>
 	<div class="contacts_phone"><a >+7 999 999-99-99</a></div>

@@ -22,14 +22,14 @@
             {% endif %}
         </div>
         <div class="menu-top">
-            <ul> НАЗВАНИЕ УК</ul>
+            <ul> {{ site.company.name }}</ul>
         </div>
         <div>
             <ul>
-                <div class="navbar-1"> О КОМПАНИИ</div>
-                <div class="navbar-2"> НОВОСТИ</div>
-                <div class="navbar-3"> ОТЧЕТНОСТЬ</div>
-                <div class="navbar-4"> КОНТАКТЫ</div>
+                <div class="navbar-1"><a href="#info"> О КОМПАНИИ </a></div>
+                <div class="navbar-2"><a href="#news" > НОВОСТИ </a></div>
+                <div class="navbar-3"><a href="#report"> ОТЧЕТНОСТЬ </a></div>
+                <div class="navbar-4"><a href="#contacts"> КОНТАКТЫ </a></div>
             </ul>
         </div>
         <style>.button_1, .button_2, .button_quest, .button_help{background-color: #{{ site.colors }};}</style>
@@ -45,7 +45,7 @@
         <style>body{background: #{{ site.bg_colors }};}</style>
         <style>.logo{background: #{{ site.colors }}</style>
     </div>
-    <p class="text">{{ site.company.name }}</p>
+    <p class="text" id="info">{{ site.company.name }}</p>
     <p class="text1">Добро пожаловать на наш официальный сайт! Изучайте актуальную информацию ТСЖ, новости и
         объявления.</p>
     <div class="img1">
@@ -64,9 +64,8 @@
     <a class="button_2" href="#">
         <p>Передать показания приборов учета</p>
     </a>
-    <p class="new">НОВОСТИ</p>
+    <p class="new" id="news">НОВОСТИ</p>
     <div class="all_new">
-
         <div class="new_block1">
             <div class="new_block_date1">
                 <p class="new_block_date1_text1">01.01.01</p>
@@ -98,7 +97,7 @@
         <div class="arrow-2-top"></div>
         <div class="arrow-2-bottom"></div>
     </div>
-    <p class="report"> ОТЧЕТНОСТЬ</p>
+    <p class="report" id="report"> ОТЧЕТНОСТЬ</p>
     <div class="all_report">
         <br><br><br><br><br>
         <div class="accordion">
@@ -132,7 +131,7 @@
             </section>
         </div>
     </div>
-    <p class="contacts">КОНТАКТЫ</p>
+    <p class="contacts" id="contacts">КОНТАКТЫ</p>
     <div class="all_contacts">
         <div class="contacts1">
             <div class="phone"></div>

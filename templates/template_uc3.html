@@ -27,10 +27,10 @@
         </div>
         <div class="menu_top">
             <ul>
-                <li> О КОМПАНИИ</li>
-                <li> НОВОСТИ</li>
-                <li> ОТЧЕТНОСТЬ</li>
-                <li> КОНТАКTЫ</li>
+                <li><a href="#info"> О КОМПАНИИ</a></li>
+                <li><a href="#news" > НОВОСТИ</a></li>
+                <li><a href="#report"> ОТЧЕТНОСТЬ</a></li>
+                <li><a href="#contacts"> КОНТАКTЫ</a></li>
             </ul>
         </div>
         <style>.block_1_contacts_button_quest, .block_1_contacts_button_accounts_statement, .contacts_quest_button, .button_help{background-color: #{{ site.colors }};}</style>
@@ -50,7 +50,7 @@
         <style>.accordion{border-right: 1px solid #{{ site.colors }}}</style>
         <style>.accordion, .accordion>label:after{border-top: 1px solid #{{ site.colors }};}</style>
     </header>
-    <div class="block_1">
+    <div class="block_1" id="info">
         <p>УПРАВЛЯЮЩАЯ КОМПАНИЯ "{{ site.company.name }}"</p>
         <div class="block_1_contacts">
             <div class="bloclk_1_text_contacts">КОНТАКTЫ</div>
@@ -79,7 +79,7 @@
             фонда.</p>
         <hr class="block_2_line"/>
     </div>
-    <div class="block_3">
+    <div class="block_3" id="news">
         <p class="block_3_new">НОВОСТИ</p>
         <div class="new_block1">
             <div class="new_block_date1"><p class="new_block_date1_text1">01.01.01</p></div>
@@ -105,7 +105,7 @@
         </div>
     </div>
     <div class="block_4">
-        <p class="block_4_report">ОТЧЕТНОСТЬ</p>
+        <p class="block_4_report" id="report">ОТЧЕТНОСТЬ</p>
         <div class="all_report">
             <br><br><br><br><br>
             <div class="accordion">
@@ -143,12 +143,11 @@
     <hr class="contacts_line"/>
     <div class="contacts">
         <p>КОНТАКTЫ</p>
-        <div class="contacts_block1"><p>"Самая лучшая"</p></div>
+        <div class="contacts_block1" id="contacts"><p>"Самая лучшая"</p></div>
         <div class="contacts1">
             <div class="phone"></div>
             <a>+7 999 999-99-99</a>
         </div>
-
         <div class="contacts2">
             <div class="contacts2_line"></div>
             <a>example@example.ru</a>
