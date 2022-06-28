@@ -925,3 +925,9 @@ text-decoration: none;
   text-align: right;
   color: #000000;
 }
+
+.houses_info{
+    margin-left: 15px;
+    font-family: 'Montserrat';
+    color: #000000;
+}

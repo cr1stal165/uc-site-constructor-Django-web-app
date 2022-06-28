@@ -1,0 +1,9 @@
+Дом 1	Адрес: 2972 Westheimer Rd. Santa Ana, Illinois 85486
+Дом 2	Адрес: 1901 Thornridge Cir. Shiloh, Hawaii 81063
+Дом 3	Адрес: 4140 Parker Rd. Allentown, New Mexico 31134
+Дом 4	Адрес: 2118 Thornridge Cir. Syracuse, Connecticut 35624
+Дом 5	Адрес: 4517 Washington Ave. Manchester, Kentucky 39495
+Дом 6	Адрес: 2715 Ash Dr. San Jose, South Dakota 83475
+Дом 7	Адрес: 8502 Preston Rd. Inglewood, Maine 98380
+Дом 8	Адрес: 2464 Royal Ln. Mesa, New Jersey 45463
+Дом 9	Адрес: 3517 W. Gray St. Utica, Pennsylvania 57867

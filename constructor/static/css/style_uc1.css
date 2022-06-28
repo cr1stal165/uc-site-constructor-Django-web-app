@@ -1057,3 +1057,9 @@ label, section, .accordion {
     border-top: 17px solid #FFF;
 }
 
+.houses_info{
+    margin-left: 15px;
+    font-family: 'Montserrat';
+    color: #000000;
+}
+

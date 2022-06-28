@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{% static 'css/style_info_page.css' %}"/>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap">
-    <title>Document</title>
+    <title>Ввод информации</title>
 </head>
 <body>
 <form method="post" action="{% url 'final_page' %}">
@@ -16,8 +16,8 @@
 
     <div class="up">
         <p class="main_text">Введите информацию </p>
-        <div class="button1"><a href="{% url 'index' %}" style="text-decoration: none" class="template">Шаблон</a></div>
-        <div class="button2"><a href="{% url 'take_color' %}" style="text-decoration: none" class="color">Цвет</a></div>
+        <div class="button1"><a href="{% url 'index' %}?site_id={{ site.id }}" style="text-decoration: none" class="template">Шаблон</a></div>
+        <div class="button2"><a href="{% url 'take_color' %}?site_id={{ site.id }}" style="text-decoration: none" class="color">Цвет</a></div>
         <div class="button3"><a href="{% url 'take_images' %}?site_id={{ site.id }}" style="text-decoration: none" class="content">Контент</a></div>
         <div class="button4"><p class="info">Информация</p></div>
         <button class="button5"><a href="{% url 'final_page' %}"><img class="arr" src="{% static 'img/Arrow3.svg' %}"></a></button>

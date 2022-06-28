@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{% static 'css/style_color_page.css' %}"/>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap">
-    <title>Document</title>
+    <title>Выбор цвета</title>
 
 </head>
 <body>
@@ -18,7 +18,7 @@
 
     <div class="up">
         <p class="main_text">Выберите цвет</p>
-        <div class="button1"><a href="{% url 'index' %}" style="text-decoration: none" class="template">Шаблон</a></div>
+        <div class="button1"><a href="{% url 'index' %}?site_id={{ site.id }}" style="text-decoration: none" class="template">Шаблон</a></div>
         <div class="button2"><p class="color">Цвет</p></div>
         <div class="button3"><p class="content">Контент</p></div>
         <div class="button4"><p class="info">Информация</p></div>

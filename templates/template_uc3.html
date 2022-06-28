@@ -15,7 +15,7 @@
         @import url({% static 'fonts/stolzl_thin.otf' %});
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
     </style>
-    <title></title>
+    <title>{{ site.company.name }}</title>
 </head>
 <body>
 <div class="center_list">
@@ -135,7 +135,7 @@
                 <input id="toggle2" type="radio" class="accordion-toggle" name="toggle"/>
                 <label for="toggle2">Дома в управлении</label>
                 <section>
-                    <p>Дома в управлении</p>
+                    <a class="houses_info" href="{% url 'show_houses' %}">Дома в управлении </a>
                 </section>
             </div>
         </div>

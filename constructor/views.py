@@ -101,7 +101,7 @@ def final_page(request):
         houses = cursor.fetchall()
         with open("list_houses.txt", 'w') as file:
             for row in houses:
-                file.write("ID - " + str(row[0]) + "\t" + "Address - " + row[1])
+                file.write("Дом " + str(row[0]) + "\t" + "Адрес: " + row[1])
                 file.write("\n")
             site.list_houses = file
             site.save()
