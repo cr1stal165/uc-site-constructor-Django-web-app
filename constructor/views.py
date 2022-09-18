@@ -90,11 +90,11 @@ def final_page(request):
     site.company = company
     site.save()
     try:
-        connection = psycopg2.connect(user="sergey",
-                                      password="qwerty123",
-                                      host="localhost",
-                                      port="5432",
-                                      database="uc_site_constructor")
+        connection = psycopg2.connect(user="*****",
+                                      password="******",
+                                      host="******",
+                                      port="********",
+                                      database="******")
         cursor = connection.cursor()
         postgreSQL_select_Query = "select * from constructor_house"
         cursor.execute(postgreSQL_select_Query)
