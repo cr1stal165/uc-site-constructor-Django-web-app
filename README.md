@@ -9,7 +9,7 @@
 
 Стек технологий:
 
-1) Python
+1) Python + Django
 2) JS 
 3) PostgreSQL
 4) HTML + CSS
